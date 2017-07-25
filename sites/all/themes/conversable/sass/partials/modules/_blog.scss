@@ -1,0 +1,77 @@
+.blog-tag {
+    background-color: #474747;
+    color: #fff;
+    width: 20%;
+    padding: $space-base/3 $space-large $space-base/3 $space-base/2;
+}
+
+.blog-subtitle {
+  color: $turquoise;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.blog-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.blog-autor {
+    font-weight: bold;
+    color: #A5A5A5;
+}
+
+.blog-img {
+    float: left;
+    margin-right: $space-out-medium;
+    width: 20%;
+}
+
+.blog-articles {
+    margin-bottom: $space-xxx-out-large;
+    overflow: hidden;
+
+    a {
+      font-weight: $font-family-base-normal-weight;
+    }
+}
+
+.row-center {
+    text-align: center;
+}
+
+.blog-links {
+    font-size: 1.5rem;
+}
+
+.blog-services-grid {
+  background-position: center;
+  background-size: cover;
+  border: 1rem solid $gray;
+  display: inline;
+  float: left;
+  margin: 0 1rem 0;
+  min-width: 30%;
+  min-height: 300px;
+  padding: $space-base;
+  text-align: center;
+}
+
+.blog-item {
+    margin: 20% auto;
+}
+
+.blog-services-grid--worshops {
+    background-image: url(../img/workshops-grid.jpg);
+    border-color: $turquoise;
+}
+
+.blog-services-grid--retreats {
+    background-image: url(../img/retreats-grid.jpg);
+    border-color: $blue;
+}
+
+.blog-services-grid--coaching {
+    background-image: url(../img/coaching-grid.jpg);
+    border-color: $salmon;
+}

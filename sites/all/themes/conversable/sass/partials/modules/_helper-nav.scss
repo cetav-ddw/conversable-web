@@ -1,0 +1,26 @@
+.helper-nav {
+  @include micro-clearfix;
+  padding: .25em 1rem;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, .5);
+}
+
+.language-link {
+  border-bottom: 0;
+  color: #000;
+  display: block;
+  font-weight: normal;
+  padding: 2px 4px;
+  text-decoration: none;
+}
+
+.en, .es {
+  display: inline;
+  font-size: 1rem;
+  float: left;
+}
+
+.language-switcher-locale-url {
+  float: right;
+  list-style: none;
+}

@@ -1,0 +1,44 @@
+.service-content {
+	float: left;
+	width: 45%;
+}
+
+.service-info {
+	margin-bottom: 6rem;
+	overflow: hidden;
+}
+
+.sevice-events {
+	overflow: hidden;
+
+	&>img {
+		float: left;
+		margin-right: 3rem;
+		width: 25%;
+		}
+	}
+
+.service-info video, 
+.service-info img {
+	float: right;
+	width: 50%;
+}
+
+.sevice-events-content {
+    float: left;
+    width: 50%;
+}
+
+.sevice-events-content strong {
+	display: block;
+}
+
+.btn-request-content {
+	margin-top: 4em;
+	text-align: center;
+}
+
+.title-event {
+	font-weight: bold;
+	font-size: 1.5rem;
+}

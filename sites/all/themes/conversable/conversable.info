@@ -1,0 +1,25 @@
+name = Conversable
+description = Theme for Conversable website
+screenshot = screenshot.png
+version = 0.1
+engine = phptemplate
+core = 7.x
+
+;-------------- R E G I O N S -------------
+
+regions[TopHeader]          = TopHeader
+regions[header]             = Header
+
+regions[content]            = Content
+
+regions[footer_top]         = Footer Top
+regions[footer_bottom]      = Footer Bottom
+
+;-------------- C S S -------------
+
+stylesheets[all][] = css/style.css
+
+;-------------- JS -------------
+
+scripts[] = js/picture.min.js
+scripts[] = js/sticky-menu.js

@@ -1,0 +1,25 @@
+.blog-article {
+  
+  p {
+    margin-top: 1.5rem;
+    padding: $space-base;
+  }
+
+  img {
+    padding: $space-base;
+  }
+}
+
+.article__image-right {
+  float: right;
+  width: 50%;
+}
+
+.article__image-left {
+  float: left;
+  width: 50%;
+}
+
+.article__main-image {
+  width: 100%;
+}

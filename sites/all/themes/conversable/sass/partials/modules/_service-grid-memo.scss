@@ -1,0 +1,25 @@
+.memo-services {
+  background-position: center;
+  background-size: cover;
+  border: 1rem solid $gray;
+
+  a {
+    font-size: 2rem;
+    margin: 20% auto;
+  }
+}
+
+.memo-services--workshops {
+  background-image: url(../img/workshops-grid.jpg);
+  border-color: $turquoise;
+}
+
+.memo-services--retreats {
+  background-image: url(../img/retreats-grid.jpg);
+  border-color: $blue;
+}
+
+.memo-services--coaching {
+  background-image: url(../img/coaching-grid.jpg);
+  border-color: $salmon;
+}

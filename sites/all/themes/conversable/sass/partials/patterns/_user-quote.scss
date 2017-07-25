@@ -1,0 +1,32 @@
+.user-quote {
+  margin: 0 auto;
+  padding: $space-xxx-large;
+  vertical-align: top;
+  border-bottom: .0625rem solid #a9aaad;
+  width: 70%;
+  background: url(../img/bigQuote.png) no-repeat;
+  margin-top: $space-out-small;
+
+  p {
+    margin-bottom: $space-out-medium;
+    font-size: 1.125rem;
+  }
+
+}
+
+.user-quote:last-child{
+  border: 0;
+}
+
+.user-quote__citation {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.user-quote__avatar {
+  display: block;
+  margin: 0 auto;
+  margin-top: $space-out-medium;
+  max-width: 90px;
+}

@@ -1,0 +1,34 @@
+.testimonio {
+  float: left;
+  display: inline-block;
+  padding: $space-base;
+  vertical-align: top;
+  border: .0625rem solid #E2EBF1;
+  min-height: 290px;
+  background: #fff;
+  width: 50%;
+
+  blockquote {
+    margin: 1.5rem;
+  }
+}
+
+.testimonio__avatar {
+  float: left;
+  margin-right: 20px;
+  max-width: 90px;
+}
+
+.testimonio__description {
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+.testimonio__cite {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.testimonio__person {
+    text-align: center;
+}

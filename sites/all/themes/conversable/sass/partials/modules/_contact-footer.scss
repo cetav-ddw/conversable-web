@@ -1,0 +1,41 @@
+.hello-friend {
+    left: 50%;
+    padding: $space-small 0;
+    position: relative;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.hello-friend__img {
+    float: left;
+    max-width: 150px;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.hello-friend_desc {
+    color: #fff;
+    float: left;
+    padding: 0 $space-small;
+}
+
+.hello-friend__title {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.mailchimp-form {
+    float: left;
+}
+
+.contact-media {
+    float: left;
+
+    img {
+        width: 60px;
+        padding: 5px;
+    }
+}

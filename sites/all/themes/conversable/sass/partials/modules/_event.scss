@@ -1,0 +1,55 @@
+.event-info {
+    margin-bottom: 6rem;
+    overflow: hidden;
+}
+
+.event--space {
+    margin: 0;
+}
+
+.event-content {
+    float: left;
+    width: 48%;
+
+    h3 {
+        margin-bottom: $space-medium;
+    }
+}
+
+.event-sidebar {
+    float: right;
+    text-align: center;
+    width: 35%;
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+.img--workshops {
+    border-left: 8px solid $turquoise;
+    width: 100%;
+}
+
+.img-paypal {
+    margin-top: 1rem; 
+    width: 85%;
+}
+
+.img-paypal--width {
+    width: 40%;
+}
+
+.accounts {
+    margin: $space-x-out-large 0;
+    text-align: initial;
+
+    img {
+        width: 70%;
+    }
+}
+
+.buy-content {
+    float: right;
+    width: 17%;
+}

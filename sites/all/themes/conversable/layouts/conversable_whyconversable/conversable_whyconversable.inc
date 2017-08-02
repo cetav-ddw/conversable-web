@@ -6,11 +6,11 @@
  */
 // Plugin definition.
 $plugin = array(
-  'title' => t('One page conversable'),
+  'title' => t('Why conversable'),
   'category' => t('Conversable'),
-  'icon' => 'conversable_onepage.png',
-  'theme' => 'conversable_onepage',
-  'css' => 'conversable_onepage.css',
+  'icon' => 'conversable_whyconversable.png',
+  'theme' => 'conversable_whyconversable',
+  'css' => 'conversable_whyconversable.css',
   'regions' => array(
     'top' => t('Top'),
     'main' => t('Main'),

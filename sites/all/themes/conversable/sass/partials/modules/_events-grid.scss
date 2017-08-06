@@ -1,14 +1,30 @@
 .events-wrapper {
   padding: 0;
+
+  li {
+    list-style: none;
+  }
 }
 
 .events-grid {
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
   border: .5rem solid $gray;
-  display: inline;
-  float: left;
   padding: $space-base;
-  min-height: 300px;
   text-align: center;
+  width: 100%;
+
+  @include query(500px) {
+    width: 75%;
+  }
+
+  @include query(850px) {
+    display: inline;
+    float: left;
+    min-height: 300px;
+    width: 33.33%;
+  }
 
   h4,
   h5 {
@@ -32,23 +48,38 @@
 
 .event-item_certified {
   background: #5f9fc0;
-  width: 33.33%;
 }
 
-.event-item_workshop {
+.event-item_Workshop {
   background: #21a295;
-  width: 33.33%;
 
   ::before {
     background-image: url("../img/icon-workshop.png")
   }
 }
 
-.event-item_consulting {
+.event-item_Retreats {
   background: $violet-light;
-  width: 33.33%;
 
   ::before {
-    background-image: url("../img/icon-consulting.png")
+    background-image: url("../img/icon-retreats.png")
+  }
+}
+
+.event-btn {
+  position: relative;
+  margin-top: 40px;
+  bottom: 20px;
+  transform: translateX(-50%);
+  left: 50%;
+
+  @include query(850px) {
+    position: absolute;
+  }
+
+  a {
+    @extend .btn;
+    @extend .btn--small;
+    @extend .btn--invert;
   }
 }

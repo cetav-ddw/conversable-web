@@ -257,7 +257,7 @@ hr {
   margin: 0;
   padding: 0; }
 
-.btn {
+.btn, .event-btn a {
   border: none;
   color: #fff;
   cursor: pointer;
@@ -275,14 +275,14 @@ hr {
   .btn--secundary:hover {
     background-color: #d0cece; }
 
-.btn--small {
+.btn--small, .event-btn a {
   padding: .6rem; }
 
-.btn--invert {
+.btn--invert, .event-btn a {
   background-color: #fff;
   border: 2px solid #fff;
   color: #a5a5a5; }
-  .btn--invert:hover {
+  .btn--invert:hover, .event-btn a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     border: 2px solid #fff;
     color: #fff; }
@@ -345,7 +345,7 @@ hr {
   font-size: 2rem;
   margin: 0; }
 
-.blog-autor {
+.blog-author {
   font-weight: bold;
   color: #A5A5A5; }
 
@@ -447,11 +447,13 @@ hr {
     text-transform: uppercase; }
 
 .main-menu__action {
-  color: inherit;
+  color: #fff;
   border-bottom: 0;
   display: block;
   padding: 4px 16px;
   text-decoration: none; }
+  .main-menu__action.active {
+    color: inherit; }
 
 .main-menu__item {
   display: inline;
@@ -538,22 +540,6 @@ hr {
   color: #777;
   margin-bottom: .75rem; }
 
-.service-outer {
-  padding-top: 30%;
-  position: relative;
-  width: 100%; }
-
-.row {
-  bottom: 0;
-  left: 0;
-  list-style-image: none;
-  list-style: none;
-  margin: 0 0 30px;
-  padding-left: 0;
-  right: 0;
-  top: 0;
-  position: absolute; }
-
 .service-grid {
   list-style: none;
   margin: 0;
@@ -578,10 +564,19 @@ hr {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 50%;
+  width: 100%;
   float: left;
-  position: relative;
-  height: 100%; }
+  position: relative; }
+  @media only screen and (min-width: 700px) {
+    .service-grid__item {
+      width: 50%;
+      min-height: 550px; } }
+  @media only screen and (min-width: 900px) {
+    .service-grid__item {
+      min-height: 400px; } }
+  @media only screen and (min-width: 1200px) {
+    .service-grid__item {
+      min-height: 350px; } }
 
 .service-grid__content {
   font-size: 1rem; }
@@ -621,14 +616,26 @@ hr {
 
 .events-wrapper {
   padding: 0; }
+  .events-wrapper li {
+    list-style: none; }
 
 .events-grid {
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
   border: 0.5rem solid #f3f2f2;
-  display: inline;
-  float: left;
   padding: 1rem;
-  min-height: 300px;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
+  @media only screen and (min-width: 500px) {
+    .events-grid {
+      width: 75%; } }
+  @media only screen and (min-width: 850px) {
+    .events-grid {
+      display: inline;
+      float: left;
+      min-height: 300px;
+      width: 33.33%; } }
   .events-grid h4,
   .events-grid h5 {
     color: #fff;
@@ -644,20 +651,27 @@ hr {
     font-weight: initial; }
 
 .event-item_certified {
-  background: #5f9fc0;
-  width: 33.33%; }
+  background: #5f9fc0; }
 
-.event-item_workshop {
-  background: #21a295;
-  width: 33.33%; }
-  .event-item_workshop ::before {
+.event-item_Workshop {
+  background: #21a295; }
+  .event-item_Workshop ::before {
     background-image: url("../img/icon-workshop.png"); }
 
-.event-item_consulting {
-  background: #bf639f;
-  width: 33.33%; }
-  .event-item_consulting ::before {
-    background-image: url("../img/icon-consulting.png"); }
+.event-item_Retreats {
+  background: #bf639f; }
+  .event-item_Retreats ::before {
+    background-image: url("../img/icon-retreats.png"); }
+
+.event-btn {
+  position: relative;
+  margin-top: 40px;
+  bottom: 20px;
+  transform: translateX(-50%);
+  left: 50%; }
+  @media only screen and (min-width: 850px) {
+    .event-btn {
+      position: absolute; } }
 
 .event-info {
   margin-bottom: 6rem;
@@ -863,22 +877,40 @@ hr {
   .sticky-menu-retreats:hover .icon-retreats-black {
     background-image: url("../img/icon-retreats.png"); }
 
-.lastest-post-wrap img {
-  width: 77%;
-  padding: 10px; }
-.lastest-post-wrap p {
+.latest-post-wrap p {
   font-weight: initial;
   margin: 0; }
 
-.lastest-post {
+.latest-post, .latest-post-content > .view-content {
   background-color: #f3f2f2;
   float: left;
   margin: 5px;
-  min-height: 825px;
   padding: 15px;
-  width: 48%; }
-  .lastest-post a {
+  width: 100%; }
+  @media only screen and (min-width: 900px) {
+    .latest-post, .latest-post-content > .view-content {
+      width: 48%;
+      min-height: 805px; } }
+  @media only screen and (min-width: 1100px) {
+    .latest-post, .latest-post-content > .view-content {
+      min-height: 895px; } }
+  .latest-post a, .latest-post-content > .view-content a {
     border: none; }
+  .latest-post img, .latest-post-content > .view-content img {
+    width: 100%;
+    height: auto;
+    padding: 10px; }
+
+.latest-trim-post {
+  width: 100%; }
+  @media only screen and (min-width: 600px) {
+    .latest-trim-post {
+      width: 50%;
+      float: left; } }
+  @media only screen and (min-width: 900px) {
+    .latest-trim-post {
+      width: 100%;
+      float: none; } }
 
 .certification__subtitle {
   font-size: 2rem;
@@ -969,7 +1001,8 @@ hr {
 
 .site-header {
   margin-bottom: 1rem;
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 5; }
 
 .site-nav {
@@ -1066,7 +1099,8 @@ hr {
   padding-top: 2.25rem; }
 
 .wrapper {
-  background-color: #fff; }
+  background-color: #fff;
+  position: relative; }
 
 .site-footer {
   background: url(../img/bg-footer.jpg) repeat-x; }

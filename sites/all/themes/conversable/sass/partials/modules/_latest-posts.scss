@@ -1,0 +1,47 @@
+.latest-post-wrap {
+  p {
+    font-weight: initial;
+    margin: 0;
+  }
+}
+
+.latest-post, .latest-post-content > .view-content {
+  background-color: $gray;
+	float: left;
+  margin: 5px;
+	padding: 15px;
+  width: 100%;
+
+  @include query(900px) {
+    width: 48%;
+    min-height: 805px;
+  }
+
+  @include query(1100px) {
+    min-height: 895px;
+  }
+  
+  a {
+    border: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+.latest-trim-post {
+  width: 100%;
+
+  @include query(600px) {
+    width: 50%;
+    float: left;
+  }
+
+  @include query(900px) {
+    width: 100%;
+    float: none;
+  }
+}

@@ -1,6 +1,7 @@
 .site-header {
   margin-bottom: $space-base;
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 5;
 }
 

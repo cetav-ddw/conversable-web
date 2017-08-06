@@ -11,27 +11,26 @@
 ?>
 
 <div class="wrapper">
-  <div class="l-group bg-pattern-turquoise">
+  <header class="l-group site-header" role="banner"> 
+    
     <?php if ($page['TopHeader']): ?>
       <div class="helper-nav">
         <?php print render($page['TopHeader']); ?>
       <!-- como meter el lenguaje switcher -->
       </div>
     <?php endif; ?>
-
-    <header class="l-group site-header" role="banner">            
+           
+    <?php if ($logo): ?>
       <div class="site-nav">
-        <?php if ($logo): ?>
-          <a href="<?php print $front_page; ?>" class="logo">
-            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
-          </a>
-        <?php endif; ?>
-
-      <?php print render($page['header']); ?>
+        <a href="<?php print $front_page; ?>" class="logo">
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
+        </a>
       </div>
+    <?php endif; ?>
 
-    </header>
-  </div>
+    <?php print render($page['header']); ?>
+
+  </header>
 
   <?php if ($page['content']): ?>
     <?php print render($page['content']); ?>

@@ -19,11 +19,11 @@
 ?>
 <div class="" <?php if (!empty($css_id)) {print "id=\"$css_id\"";} ?>>
   <div class="">
-    <div><?php print $content['top']; ?></div>
-    <div><?php print $content['main']; ?></div>
-    <div><?php print $content['middle_above']; ?></div>
-    <div><?php print $content['middle']; ?></div>
-    <div><?php print $content['middle_below']; ?></div>
-    <div><?php print $content['bottom']; ?></div
+    <div class="l-group bg-pattern-turquoise"><?php print $content['top']; ?></div>
+    <div class="l-group section-wrap"><?php print $content['main']; ?></div>
+    <div class="l-group section-wrap section-wrap--tight"><?php print $content['middle_above']; ?></div>
+    <div class="l-group section-wrap"><div class="group team-grid__wrapper"><?php print $content['middle']; ?></div></div>
+    <div class="l-group section-wrap section-wrap--tight bg-gray"><div class="group leads-group__wrapper"><?php print $content['middle_below']; ?></div></div>
+    <div class="l-group section-wrap"><div class="group logo-grid__wrapper"><?php print $content['bottom']; ?></div></div
   </div>
 </div>

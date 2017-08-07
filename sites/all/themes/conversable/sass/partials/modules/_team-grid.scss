@@ -1,63 +1,103 @@
-.team-grid__wrap {
+.team-grid__wrapper .panels-ipe-sort-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around
 }
 
-.team-grid__item {
+.team-grid__wrapper .panels-ipe-portlet-wrapper {
   @include micro-clearfix;
-  border: 1px solid #fff;
-  position: relative;
-  background-color: #f5f5f6;
-  width: 50%;
+  width: 100%;
   padding: $space-base;
-  flex-grow: 1;
+  vertical-align: top;
+  border: 1px solid #fff;
+  background-color: #f5f5f6;
+  display: inline-block;
 
-  &:last-child {
-    flex-grow: 0;
+  @include query(600px) {
+    width: 50%;    
   }
 }
 
-.team-grid__photo-wrap {
-  width: 200px;
-  float: left;
-  margin-right: $space-out-small;
+.team-grid__wrapper .panels-ipe-sort-container>div:first-child {
+  display: block;
+  float: none;
+  width: 100%;
+  border: none;
+  background-color: transparent;
 }
 
-.team-grid__photo {
-  height: auto;
-  max-width: 100%;
+.team-grid__photo-wrap {
+  margin-right: $space-out-small;
+
+  img {
+    height: auto;
+    max-width: 100%;
+    padding-top: 20px;
+
+    @include query(950px) {
+      left: 0;
+      padding-top: 0;
+    }
+  }
+}
+
+.team-grid--item {
+  .panel-col-last {
+    width: 100%;
+
+    @include query(950px) {
+      width: calc(100% - 220px);
+    }
+  }
+
+  .panel-col-first {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+
+    @include query(950px) {
+      width: 200px;
+      margin-right: 1.125rem;
+    }
+  }
 }
 
 .team-grid__info {
   background-color: #fff;
   padding: $space-base;
+}
+
+.team-grid__details {
+  font-size: .75rem;
+  margin-bottom: 0;
+  padding-bottom: 20px;
 
   a {
     font-weight: $font-family-base-normal-weight;
   }
 }
 
-.team-grid__details {
-  font-size: .75rem;
-  margin-bottom: 0;
-}
-
 .team-grid__title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding-top: 20px;
   margin-bottom: 0;
   text-transform: uppercase;
 }
 
 .team-grid__desc {
-  float: right;
-  width: 54%;
+  width: 100%;
   margin-right: $space-out-small;
+
   p {
     font-size: 1rem;
   }
 }
 
 .team-grid__subt {
+  font-weight: bold;
+  background-color: #fff;
   color: #777;
-  margin-bottom: .75rem;
+  padding-bottom: .75rem;
 }

@@ -1,4 +1,15 @@
+.logo-grid__wrapper .panels-ipe-portlet-wrapper {
+  @include micro-clearfix;
+  display: inline-block;
+}
+
+.logo-grid__wrapper .panels-ipe-sort-container>div:first-child {
+  display: block;
+  width: 100%;
+}
+
 .logo-item {
+	width: auto;
     display: inline-block;
     vertical-align: top;
     margin: -3px;

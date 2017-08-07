@@ -1,11 +1,6 @@
-.logo-grid__wrapper .panels-ipe-portlet-wrapper {
+.logo-grid__wrapper .pane-bundle-ally {
   @include micro-clearfix;
   display: inline-block;
-}
-
-.logo-grid__wrapper .panels-ipe-sort-container>div:first-child {
-  display: block;
-  width: 100%;
 }
 
 .logo-item {

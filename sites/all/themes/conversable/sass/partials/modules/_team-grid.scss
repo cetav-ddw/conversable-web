@@ -1,10 +1,10 @@
-.team-grid__wrapper .panels-ipe-sort-container {
+.team-grid__wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around
 }
 
-.team-grid__wrapper .panels-ipe-portlet-wrapper {
+.team-grid__wrapper .pane-bundle-team {
   @include micro-clearfix;
   width: 100%;
   padding: $space-base;
@@ -16,14 +16,6 @@
   @include query(600px) {
     width: 50%;    
   }
-}
-
-.team-grid__wrapper .panels-ipe-sort-container>div:first-child {
-  display: block;
-  float: none;
-  width: 100%;
-  border: none;
-  background-color: transparent;
 }
 
 .team-grid__photo-wrap {
@@ -61,11 +53,6 @@
       margin-right: 1.125rem;
     }
   }
-}
-
-.team-grid__info {
-  background-color: #fff;
-  padding: $space-base;
 }
 
 .team-grid__details {

@@ -434,17 +434,13 @@ hr {
   float: right;
   list-style: none; }
 
-.logo-grid__wrapper .panels-ipe-portlet-wrapper {
+.logo-grid__wrapper .pane-bundle-ally {
   display: inline-block; }
-  .logo-grid__wrapper .panels-ipe-portlet-wrapper:before, .logo-grid__wrapper .panels-ipe-portlet-wrapper:after {
+  .logo-grid__wrapper .pane-bundle-ally:before, .logo-grid__wrapper .pane-bundle-ally:after {
     content: " ";
     display: table; }
-  .logo-grid__wrapper .panels-ipe-portlet-wrapper:after, .logo-grid__wrapper .panels-ipe-portlet-wrapper:after {
+  .logo-grid__wrapper .pane-bundle-ally:after, .logo-grid__wrapper .pane-bundle-ally:after {
     clear: both; }
-
-.logo-grid__wrapper .panels-ipe-sort-container > div:first-child {
-  display: block;
-  width: 100%; }
 
 .logo-item {
   width: auto;
@@ -524,33 +520,26 @@ hr {
 .leads-grid__desc {
   margin-bottom: .5rem; }
 
-.team-grid__wrapper .panels-ipe-sort-container {
+.team-grid__wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around; }
 
-.team-grid__wrapper .panels-ipe-portlet-wrapper {
+.team-grid__wrapper .pane-bundle-team {
   width: 100%;
   padding: 1rem;
   vertical-align: top;
   border: 1px solid #fff;
   background-color: #f5f5f6;
   display: inline-block; }
-  .team-grid__wrapper .panels-ipe-portlet-wrapper:before, .team-grid__wrapper .panels-ipe-portlet-wrapper:after {
+  .team-grid__wrapper .pane-bundle-team:before, .team-grid__wrapper .pane-bundle-team:after {
     content: " ";
     display: table; }
-  .team-grid__wrapper .panels-ipe-portlet-wrapper:after, .team-grid__wrapper .panels-ipe-portlet-wrapper:after {
+  .team-grid__wrapper .pane-bundle-team:after, .team-grid__wrapper .pane-bundle-team:after {
     clear: both; }
   @media only screen and (min-width: 600px) {
-    .team-grid__wrapper .panels-ipe-portlet-wrapper {
+    .team-grid__wrapper .pane-bundle-team {
       width: 50%; } }
-
-.team-grid__wrapper .panels-ipe-sort-container > div:first-child {
-  display: block;
-  float: none;
-  width: 100%;
-  border: none;
-  background-color: transparent; }
 
 .team-grid__photo-wrap {
   margin-right: 1.125rem; }
@@ -577,10 +566,6 @@ hr {
     .team-grid--item .panel-col-first {
       width: 200px;
       margin-right: 1.125rem; } }
-
-.team-grid__info {
-  background-color: #fff;
-  padding: 1rem; }
 
 .team-grid__details {
   font-size: .75rem;

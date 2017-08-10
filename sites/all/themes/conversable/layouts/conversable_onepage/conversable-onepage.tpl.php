@@ -23,7 +23,7 @@
     <div class="l-group section-wrap group"><div class="group"><?php print $content['main']; ?></div></div>
     <div class="l-group section-wrap"><?php print $content['middle_above']; ?></div>
     <div class="l-group "><?php print $content['middle']; ?></div>
-    <div class="l-group section-wrap bg-gray"><div class="group"><?php print $content['middle_below']; ?></div>></div>
+    <div class="l-group section-wrap bg-gray"><div class="group"><?php print $content['middle_below']; ?></div></div>
     <div class="l-group section-wrap"><?php print $content['bottom']; ?></div
   </div>
 </div>

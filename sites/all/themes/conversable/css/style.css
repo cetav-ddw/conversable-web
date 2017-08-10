@@ -1083,7 +1083,7 @@ hr {
 
 .h-page-wrapper {
   position: relative;
-  top: -175px; }
+  margin-top: -175px; }
 
 .l-content {
   margin: 0 auto;

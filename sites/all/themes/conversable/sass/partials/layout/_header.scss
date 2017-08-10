@@ -1,10 +1,15 @@
 .site-header {
   margin-bottom: $space-base;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 5;
 }
 
 .site-nav {
   padding: .25em 1rem;
+}
+
+.h-page-wrapper {
+	position: relative;
+	top: -175px;
 }

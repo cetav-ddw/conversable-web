@@ -541,16 +541,14 @@ hr {
     .team-grid__wrapper .pane-bundle-team {
       width: 50%; } }
 
-.team-grid__photo-wrap {
-  margin-right: 1.125rem; }
-  .team-grid__photo-wrap img {
-    height: auto;
-    max-width: 100%;
-    padding-top: 20px; }
-    @media only screen and (min-width: 950px) {
-      .team-grid__photo-wrap img {
-        left: 0;
-        padding-top: 0; } }
+.team-grid__photo-wrap img {
+  height: auto;
+  max-width: 100%;
+  padding-top: 20px; }
+  @media only screen and (min-width: 950px) {
+    .team-grid__photo-wrap img {
+      left: 0;
+      padding-top: 0; } }
 
 .team-grid--item .panel-col-last {
   width: 100%; }
@@ -1076,12 +1074,16 @@ hr {
 
 .site-header {
   margin-bottom: 1rem;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 5; }
 
 .site-nav {
   padding: .25em 1rem; }
+
+.h-page-wrapper {
+  position: relative;
+  top: -175px; }
 
 .l-content {
   margin: 0 auto;
@@ -1118,7 +1120,8 @@ hr {
   height: 40rem;
   overflow: hidden;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  top: -175px; }
 
 .bg-pattern-turquoise {
   background: url(../img/patron-4.jpg) fixed;

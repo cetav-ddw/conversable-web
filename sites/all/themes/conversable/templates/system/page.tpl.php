@@ -11,7 +11,12 @@
 ?>
 
 <div class="wrapper">
+
+<?php if ($is_front): ?> 
   <header class="l-group site-header" role="banner"> 
+<?php else: ?>  
+  <header class="l-group site-header bg-pattern-turquoise" role="banner"> 
+<?php endif; ?>   
     
     <?php if ($page['TopHeader']): ?>
       <div class="helper-nav">

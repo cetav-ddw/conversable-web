@@ -109,8 +109,7 @@ h4 {
   color: inherit;
   text-align: center;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
-  text-transform: uppercase;
-  padding-top: 150px; }
+  text-transform: uppercase; }
 
 .h-bar:before {
   content: '';
@@ -1073,17 +1072,13 @@ hr {
   z-index: 12; }
 
 .site-header {
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   position: relative;
   width: 100%;
   z-index: 5; }
 
 .site-nav {
   padding: .25em 1rem; }
-
-.h-page-wrapper {
-  position: relative;
-  margin-top: -175px; }
 
 .l-content {
   margin: 0 auto;

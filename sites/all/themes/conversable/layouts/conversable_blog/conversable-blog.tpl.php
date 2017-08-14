@@ -10,10 +10,9 @@
  * - $content: An array of content, each item in the array is keyed to one
  *   panel of the layout. This layout supports the following sections:
  *   $content['top']: Content in the top.
+ *   $content['left_above']: Content in the left above section.
+ *   $content['right_above']: Content in the right above section.
  *   $content['main']: Content in the main section.
- *   $content['middle_above']: Content in the middel above.
- *   $content['middle']: Content in the middel.
- *   $content['middle_below']: Content in the middel below.
  *   $content['bottom']: Content in the bottom.
  */
 ?>

@@ -31,9 +31,32 @@
     width: 100%;
 }
 
-.img-paypal {
-    margin-top: 1rem; 
-    width: 85%;
+
+.buy-content {
+    margin-top: $space-base;
+
+    @include query(700px) {
+        clear: both;
+        margin-left: 309px;
+        margin-top: 0;
+    }
+
+    @include query(1050px) {
+        clear: none;
+        margin: 0;
+        float: right;
+        width: 17%;
+    }
+}
+
+.img-paypal:after {
+    content: "";
+    width: 155px;
+    height: 39px;
+    display: inline-block;
+    background-image: url("../img/paypal.png"); 
+    background-size: contain;
+    margin-top: 1rem;
 }
 
 .img-paypal--width {
@@ -47,9 +70,4 @@
     img {
         width: 70%;
     }
-}
-
-.buy-content {
-    float: right;
-    width: 17%;
 }

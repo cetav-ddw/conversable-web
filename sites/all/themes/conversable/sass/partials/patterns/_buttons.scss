@@ -5,6 +5,10 @@
     display: inline-block;
     font-size: 1rem;
     padding: 1.5rem 3rem;
+
+    &>p {
+        margin-bottom: 0;
+    }
 }
 
 .btn--principal {

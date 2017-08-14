@@ -1,44 +1,111 @@
-.service-content {
-	float: left;
-	width: 45%;
-}
-
 .service-info {
 	margin-bottom: 6rem;
 	overflow: hidden;
-}
 
-.sevice-events {
-	overflow: hidden;
+	img {
+		width: 100%;
+		height: auto;
+	}
 
-	&>img {
-		float: left;
-		margin-right: 3rem;
-		width: 25%;
+	.panel-col-first{
+		width: 100%;
+
+		@include query(700px) {
+			float: left;
+			width: 50%;
 		}
 	}
 
-.service-info video, 
-.service-info img {
-	float: right;
-	width: 50%;
+	.panel-col-last{
+		width: 100%;
+		margin-top: 2em;
+
+		@include query(700px) {
+			margin-top: 0;
+			float: left;
+			width: 50%;
+		}
+	}
 }
 
-.sevice-events-content {
-    float: left;
-    width: 50%;
+.service-title {
+	font: 1.5rem $font-family-contrast;
+	font-weight: bold;
+	margin-bottom: $space-base;
 }
 
-.sevice-events-content strong {
-	display: block;
+.service-video {
+	position: relative; 
+	padding-top: 56%;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%; 
+		height: 100%;
+	}
 }
 
 .btn-request-content {
-	margin-top: 4em;
+	margin-top: 1.5em;
 	text-align: center;
+
+	@include query(700px) {
+		margin-top: 3em;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.service-events {
+	overflow: hidden;
+
+	strong {
+		display: block;
+	}
+
+	&>p {
+		margin-bottom: 0;
+	}
+}
+
+.service-events-content {
+	width: 100%;
+
+	@include query(700px) {
+	    float: left;
+	    width: 50%;
+	}
 }
 
 .title-event {
 	font-weight: bold;
 	font-size: 1.5rem;
 }
+
+.service-events:before{
+	content: "";
+	margin-right: 3rem;
+	width: 261px;
+	height: 178px;
+	display: inline-block;
+	background-size: contain;
+
+	@include query(700px) {
+		float: left;
+	}
+}
+
+.service-events-workshops:before {
+	background-image: url("../img/servicios-img-default-workshops.jpg");
+}
+
+.service-events-retreats:before {
+	background-image: url("../img/servicios-img-default-consultancies.jpg");
+}
+
+
+

@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * @file
  * Template for One page panel layout.
@@ -21,13 +21,30 @@
 ?>
 <div class="" <?php if (!empty($css_id)) {print "id=\"$css_id\"";} ?>>
   <div class="">
-    <div><?php print $content['top']; ?></div>
-    <div><?php print $content['main']; ?></div>
-    <div><?php print $content['first_wide']; ?></div>
-    <div><?php print $content['second_wide']; ?></div>
-    <div><?php print $content['third_wide']; ?></div>
-    <div><?php print $content['fourth_wide']; ?></div>
-    <div><?php print $content['fifth_wide']; ?></div>
-    <div><?php print $content['bottom']; ?></div>
+    <div class="l-group section-wrap bg-pattern-turquoise"><?php print $content['top']; ?></div>
+    <div class="l-group section-wrap"><?php print $content['main']; ?></div>
+
+    <section id="serviceWorkshop" class="l-group section-wrap group">
+        <div><?php print $content['first_wide']; ?></div>
+        <div><?php print $content['second_wide']; ?></div>
+    </section>
+
+    <section id="serviceConsultancies" class="l-group section-wrap bg-gray">
+        <div class="group"><?php print $content['third_wide']; ?></div>
+    </section>
+
+    <section id="serviceCoaching" class="l-group section-wrap">
+        <div class="group">
+            <?php print $content['fourth_wide']; ?>
+        </div>
+    </section>
+
+    <section id="serviceRetreats" class="l-group section-wrap bg-gray">
+        <div class="group">
+            <div><?php print $content['fifth_wide']; ?></div>
+            <div><?php print $content['bottom']; ?></div>
+        </div>
+    </section>
+
   </div>
 </div>

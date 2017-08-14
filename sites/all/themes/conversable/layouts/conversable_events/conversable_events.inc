@@ -13,6 +13,6 @@ $plugin = array(
   'css' => 'conversable_events.css',
   'regions' => array(
     'top' => t('Top'),
-    'sigle_wide' => t('Sigle wide'),
+    'single_wide' => t('Sigle wide'),
   ),
 );

@@ -293,19 +293,29 @@ hr {
     color: #fff; }
 
 .user-quote {
-  margin: 0 auto;
-  padding: 6.75rem;
-  vertical-align: top;
   border-bottom: .0625rem solid #a9aaad;
-  width: 70%;
+  margin: 0 auto;
+  padding: 6.75rem 0 0;
+  vertical-align: top;
+  width: 100%;
   background: url(../img/bigQuote.png) no-repeat;
   margin-top: 1.125rem; }
-  .user-quote p {
-    margin-bottom: 2.25rem;
-    font-size: 1.125rem; }
+  @media only screen and (min-width: 450px) {
+    .user-quote {
+      padding: 6.75rem 3.375rem 3.375rem; } }
+  @media only screen and (min-width: 650px) {
+    .user-quote {
+      padding: 6.75rem; } }
+  @media only screen and (min-width: 1000px) {
+    .user-quote {
+      width: 70%; } }
 
-.user-quote:last-child {
-  border: 0; }
+.pane-bundle-certification-testimonials:last-child div {
+  border: none; }
+
+.user-quote__quote {
+  margin-bottom: 2.25rem;
+  font-size: 1.125rem; }
 
 .user-quote__citation {
   font-weight: bold;
@@ -1073,7 +1083,7 @@ hr {
     margin: 0; }
 
 .certification-descrip {
-  margin: 50px 0; }
+  margin-top: 50px; }
   .certification-descrip p {
     text-align: left; }
 
@@ -1085,27 +1095,37 @@ hr {
   margin: 0; }
 
 .certification-info {
-  text-align: center; }
-  .certification-info p {
-    margin: 0;
-    text-align: center;
-    font-weight: 700; }
+  text-align: center;
+  margin: 0;
+  text-align: center;
+  font-weight: 700; }
 
 .certification-required {
   list-style: none;
   text-align: left;
+  margin-bottom: 50px;
   padding: 0; }
 
 .certification-subscription {
   margin-top: 50px; }
 
 .certification-wrap-v2 {
-  width: 33%;
+  width: 100%;
   padding: 2rem;
   float: left;
-  border-right: 1px solid #313233; }
+  border-bottom: 1px solid #313233;
+  margin-bottom: 2rem; }
+  @media only screen and (min-width: 900px) {
+    .certification-wrap-v2 {
+      width: 33%;
+      border-bottom: none;
+      border-right: 1px solid #313233; } }
 
-.certification-wrap-v2:last-child {
+.certification-btn a {
+  color: #fff;
+  border: none; }
+
+.certified-last div {
   border: none; }
 
 .next-events {

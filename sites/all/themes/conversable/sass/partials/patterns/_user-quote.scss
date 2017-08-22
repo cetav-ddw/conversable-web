@@ -1,21 +1,32 @@
 .user-quote {
-  margin: 0 auto;
-  padding: $space-xxx-large;
-  vertical-align: top;
   border-bottom: .0625rem solid #a9aaad;
-  width: 70%;
+  margin: 0 auto;
+  padding: $space-xxx-large 0 0;
+  vertical-align: top;
+  width: 100%;
   background: url(../img/bigQuote.png) no-repeat;
   margin-top: $space-out-small;
 
-  p {
-    margin-bottom: $space-out-medium;
-    font-size: 1.125rem;
+  @include query(450px) {
+    padding: $space-xxx-large $space-out-large $space-out-large;
   }
 
+  @include query(650px) {
+    padding: $space-xxx-large;
+  }
+
+  @include query(1000px) {
+    width: 70%;   
+  }
 }
 
-.user-quote:last-child{
-  border: 0;
+.pane-bundle-certification-testimonials:last-child div {
+  border: none;
+}
+
+.user-quote__quote {
+  margin-bottom: $space-out-medium;
+  font-size: 1.125rem;
 }
 
 .user-quote__citation {

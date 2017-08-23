@@ -16,7 +16,7 @@
 ?>
 <div class="" <?php if (!empty($css_id)) {print "id=\"$css_id\"";} ?>>
   <div class="">
-    <div class="l-group section-wrap"><?php print $content['tope']; ?></div>
+    <div class="l-group section-wrap"><?php print $content['top']; ?></div>
     <div class="l-group section-wrap"><?php print $content['left_below']; ?></div>
     <div class="l-group section-wrap"><?php print $content['right_below']; ?></div>
   </div>

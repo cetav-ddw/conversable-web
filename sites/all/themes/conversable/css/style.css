@@ -54,7 +54,7 @@ template {
   display: none; }
 
 form {
-  width: 384px; }
+  max-width: 384px; }
 
 input,
 textarea,
@@ -345,36 +345,6 @@ hr {
 .article__main-image {
   width: 100%; }
 
-.blog-tag {
-  background-color: #474747;
-  color: #fff;
-  width: 20%;
-  padding: 0.33333rem 3.375rem 0.33333rem 0.5rem; }
-
-.blog-subtitle {
-  color: #21a295;
-  font-size: 1rem;
-  margin: 0; }
-
-.blog-title {
-  font-size: 2rem;
-  margin: 0; }
-
-.blog-author {
-  font-weight: bold;
-  color: #A5A5A5; }
-
-.blog-img {
-  float: left;
-  margin-right: 2.25rem;
-  width: 20%; }
-
-.blog-articles {
-  margin-bottom: 6.75rem;
-  overflow: hidden; }
-  .blog-articles a {
-    font-weight: 300; }
-
 .row-center {
   text-align: center; }
 
@@ -407,6 +377,90 @@ hr {
 .blog-services-grid--coaching {
   background-image: url(../img/coaching-grid.jpg);
   border-color: #f5978d; }
+
+@media only screen and (min-width: 950px) {
+  .blog {
+    float: left;
+    width: 70%; } }
+
+.blog-tag {
+  background-color: #474747;
+  color: #fff;
+  width: 20%;
+  padding: 0.33333rem 3.375rem 0.33333rem 0.5rem; }
+
+.blog-subtitle {
+  margin: 0; }
+  .blog-subtitle a {
+    border: none;
+    color: #21a295;
+    font-size: 1rem; }
+
+.blog-title {
+  font-size: 2rem;
+  margin: 0; }
+
+.blog-author {
+  font-weight: bold;
+  color: #A5A5A5; }
+
+.blog-img {
+  width: 100%; }
+  @media only screen and (min-width: 650px) {
+    .blog-img {
+      width: auto;
+      float: left;
+      margin-right: 2.25rem; } }
+
+.blog-articles {
+  margin-bottom: 6.75rem;
+  overflow: hidden; }
+  .blog-articles a {
+    font-weight: 300; }
+
+.blog-articles-content {
+  width: 100%; }
+  @media only screen and (min-width: 650px) {
+    .blog-articles-content {
+      width: 65%;
+      float: left; } }
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch; }
+  @media only screen and (min-width: 950px) {
+    .categories {
+      float: right;
+      display: block; } }
+
+.pane-bundle-blog-categories-link {
+  width: 100%;
+  margin: auto; }
+  @media only screen and (min-width: 450px) {
+    .pane-bundle-blog-categories-link {
+      float: left;
+      width: 45%; } }
+  @media only screen and (min-width: 650px) {
+    .pane-bundle-blog-categories-link {
+      width: 30%; } }
+  @media only screen and (min-width: 950px) {
+    .pane-bundle-blog-categories-link {
+      width: 100%;
+      float: none; } }
+
+.categories-tag {
+  background-color: #F3F2F2;
+  margin-bottom: 2.25rem;
+  padding: 2.25rem 1.125rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center; }
+  .categories-tag .blog-subtitle a {
+    font-size: 1.5rem; }
+
+.categories-text {
+  font-size: 1.125rem; }
 
 .logo {
   border-bottom: 0;

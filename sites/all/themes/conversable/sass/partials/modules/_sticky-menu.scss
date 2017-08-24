@@ -1,5 +1,6 @@
 .sticky-menu {
     background-color: transparent;
+    margin-bottom: $space-out-small;
 }
 
 .sticky-menu__wrap {
@@ -24,37 +25,47 @@
 .sticky-menu-item {
     border: none;
     display: inline-block;
-    padding: $space-base;
+    padding: $space-base !important;
     text-align: center;
     width: 150px;
+    margin: 0 !important;
 }
 
 .sticky-icon {
+    border: none;
+    color: #000;
+    font-family: $font-family-contrast;
+    font-size: 1rem;
+}
+
+.sticky-icon:before {
     background-size: contain;
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
     margin: 0 auto;
+    display: block;
+    content: "";
 }
  
-.icon-workshop-black {
+.icon-workshop-black:before {
     background-image: url("../img/icon-workshop-black.png");    
 }
 
-.icon-consultancies-black {
+.icon-consultancies-black:before {
     background-image: url("../img/icon-consultancies-black.png");   
 }
 
-.icon-coaching-black {
+.icon-coaching-black:before {
     background-image: url("../img/icon-coaching-black.png");    
 }
 
-.icon-retreats-black {
+.icon-retreats-black:before {
     background-image: url("../img/icon-retreats-black.png");    
 }
 
 .sticky-menu-item:hover {
-    h4 {
+    a {
         color: #fff;
     }
 }
@@ -62,7 +73,7 @@
 .sticky-menu-workshop:hover {
     background-color: $turquoise;
 
-    .icon-workshop-black {
+    .icon-workshop-black:before {
         background-image: url("../img/icon-workshop.png");  
     }
 }
@@ -70,7 +81,7 @@
 .sticky-menu-consultancies:hover {
     background-color: $violet;
 
-    .icon-consultancies-black {
+    .icon-consultancies-black:before {
         background-image: url("../img/icon-consulting.png");    
     }
 }
@@ -78,7 +89,7 @@
 .sticky-menu-coaching:hover {
     background-color: $salmon;
 
-    .icon-coaching-black {
+    .icon-coaching-black:before {
         background-image: url("../img/icon-coaching.png");  
     }
 }
@@ -86,7 +97,7 @@
 .sticky-menu-retreats:hover {
     background-color: $blue;
 
-    .icon-retreats-black {
+    .icon-retreats-black:before {
         background-image: url("../img/icon-retreats.png");  
     }
 }

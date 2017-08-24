@@ -8,8 +8,6 @@
 
 .events-grid {
   position: relative;
-  transform: translateX(-50%);
-  left: 50%;
   border: .5rem solid $gray;
   padding: $space-base;
   text-align: center;
@@ -46,8 +44,12 @@
   }
 }
 
-.event-item_certified {
-  background: #5f9fc0;
+.event-item_Certification {
+  background: $salmon;
+
+  ::before {
+    background-image: url("../img/icon-certified.png")
+  }
 }
 
 .event-item_Workshop {
@@ -59,7 +61,7 @@
 }
 
 .event-item_Retreats {
-  background: $violet-light;
+  background: $blue;
 
   ::before {
     background-image: url("../img/icon-retreats.png")

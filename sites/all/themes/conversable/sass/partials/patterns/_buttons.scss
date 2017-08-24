@@ -1,13 +1,19 @@
 .btn {
     border: none;
-    color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-size: 1rem;
-    padding: 1.5rem 3rem;
+    padding: 0.5rem 2rem;
+    border-radius: 2px;
 
     &>p {
         margin-bottom: 0;
+    }
+
+    a {
+        border: none;
+        font-size: 1rem;
+        color: #fff;
+        font-weight: normal;
     }
 }
 
@@ -41,4 +47,21 @@
         border: 2px solid #fff;
         color: #fff;
     }
+}
+
+.btn-subscribe {
+    position: relative;
+}
+
+.btn-subscribe:after {
+    content: "";
+    background: center no-repeat url(../img/btn-subscribe.png) $turquoise-accent;
+    background-size: contain;
+    width: 55px;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    border-radius: 2px;
+    right: -53px;
+    top: 0;
 }

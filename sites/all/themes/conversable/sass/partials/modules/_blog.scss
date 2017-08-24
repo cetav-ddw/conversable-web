@@ -12,15 +12,25 @@
   border: 1rem solid $gray;
   display: inline;
   float: left;
-  margin: 0 1rem 0;
-  min-width: 30%;
-  min-height: 300px;
+  margin-bottom: 0.5em !important;
+  width: 100%;
+  min-height: 200px;
   padding: $space-base;
   text-align: center;
+
+  @include query(650px) {
+    width: 48%;
+    min-height: 250px;
+  }
+
+  @include query(1200px) {
+    width: 24%;
+    min-height: 300px;
+  }
 }
 
 .blog-item {
-    margin: 20% auto;
+    margin: 40% auto;
 }
 
 .blog-services-grid--worshops {
@@ -36,6 +46,11 @@
 .blog-services-grid--coaching {
     background-image: url(../img/coaching-grid.jpg);
     border-color: $salmon;
+}
+
+.blog-services-grid--consultancies {
+    background-image: url(../img/consulting-grid.jpg);
+    border-color: $violet-light;
 }
 
 .blog {

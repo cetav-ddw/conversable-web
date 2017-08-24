@@ -29,6 +29,6 @@
 		<div><?php print $content['main']; ?></div>
 	</div>
 
-    <div class="l-group section-wrap"><?php print $content['bottom']; ?></div>
+    <div class="l-group section-wrap group"><?php print $content['bottom']; ?></div>
   </div>
 </div>

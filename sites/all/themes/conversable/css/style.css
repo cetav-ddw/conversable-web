@@ -1346,7 +1346,10 @@ hr {
   padding: 3.375rem 2.25rem; }
 
 .section-wrap--intro {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2; }
 
 .section-intro {

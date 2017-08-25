@@ -22,7 +22,6 @@ stylesheets[all][] = css/style.css
 ;-------------- JS -------------
 
 scripts[] = js/picture.min.js
-scripts[] = js/sticky-menu.js
 
 ;-------------- Panels -------------
 

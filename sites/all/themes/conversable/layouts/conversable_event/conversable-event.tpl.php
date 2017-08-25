@@ -16,8 +16,12 @@
 ?>
 <div class="" <?php if (!empty($css_id)) {print "id=\"$css_id\"";} ?>>
   <div class="">
-    <div class="l-group section-wrap"><?php print $content['left_above']; ?></div>
-    <div class="l-group section-wrap"><?php print $content['right_above']; ?></div>
-    <div class="l-group section-wrap"><?php print $content['bottom']; ?></div>
+  	<div class="l-group section-wrap group event-info">
+	    <div class="event-content"><?php print $content['left_above']; ?></div>
+	    <div class="event-sidebar"><?php print $content['right_above']; ?></div>
+	</div>
+    <div class="l-group section-wrap bg-gray">
+    	<div class="group"><?php print $content['bottom']; ?></div> 
+    </div>
   </div>
 </div>

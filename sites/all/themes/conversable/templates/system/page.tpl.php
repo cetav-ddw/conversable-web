@@ -42,11 +42,7 @@
   <?php endif; ?>
 
   <footer class="l-group site-footer" role="contentinfo">
-    <div class="group hello-friend">
       <?php print render($page['footer_top']); ?>
-    </div>
-    <div class="contact-footer">
       <?php print render($page['footer_bottom']); ?>
-    </div>
   </footer>
 </div>

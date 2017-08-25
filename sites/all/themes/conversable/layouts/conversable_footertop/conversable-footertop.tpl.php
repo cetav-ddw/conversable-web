@@ -13,7 +13,7 @@
  */
 ?>
 <div class="" <?php if (!empty($css_id)) {print "id=\"$css_id\"";} ?>>
-  <div class="">
-    <div class="l-group section-wrap"><?php print $content['main']; ?></div>
+  <div class="l-group">
+    <div class="group"><?php print $content['main']; ?></div>
   </div>
 </div>

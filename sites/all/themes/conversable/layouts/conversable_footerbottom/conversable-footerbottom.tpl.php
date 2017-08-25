@@ -14,8 +14,10 @@
  */
 ?>
 <div class="" <?php if (!empty($css_id)) {print "id=\"$css_id\"";} ?>>
-  <div class="">
-    <div class="l-group section-wrap"><?php print $content['left']; ?></div>
-    <div class="l-group section-wrap"><?php print $content['right']; ?></div>
+  <div class="l-group contact-footer">
+  	<div class="group">
+	    <div class="mailchimp-form"><?php print $content['left']; ?></div>
+	    <div class="contact-media"><?php print $content['right']; ?></div>
+  	</div>
   </div>
 </div>

@@ -2,40 +2,83 @@
     left: 50%;
     padding: $space-small 0;
     position: relative;
+    z-index: 2;
     -webkit-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
+
+    .panel-col-first {
+        width: auto;
+    }
+
+    .panel-col-last {
+        width: 80%;
+    }
 }
 
 .hello-friend__img {
     float: left;
     max-width: 150px;
+    margin-left: 1rem;
 
     img {
-        max-width: 100%;
+        width: 100%;
+        height: auto;
     }
 }
 
-.hello-friend_desc {
+.hello-friend_msg {
     color: #fff;
-    float: left;
-    padding: 0 $space-small;
+    padding: 0 1rem;
 }
 
 .hello-friend__title {
     color: #fff;
+    padding: 0 1rem;
     margin-bottom: 0;
 }
 
 .mailchimp-form {
     float: left;
+    width: 384px;
+    margin-left: 188px;
 }
 
 .contact-media {
     float: left;
 
-    img {
-        width: 60px;
-        padding: 5px;
+    li {
+        display: inline-block;
     }
+}
+
+.contact-icon {
+    color: transparent;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    display: inline-block;
+
+    &.active {
+        color: transparent;
+    }
+}
+
+.contact-facebook {
+    background-image: url(../img/social-media-facebook.png);
+}
+
+.contact-instagram {
+    background-image: url(../img/social-media-instragram.png);
+}
+
+.contact-youtube {
+    background-image: url(../img/social-media-youtube.png);
+}
+
+.contact-blog {
+    background-image: url(../img/social-media-blog.png);
 }

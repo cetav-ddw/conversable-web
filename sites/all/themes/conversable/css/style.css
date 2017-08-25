@@ -53,9 +53,6 @@ canvas {
 template {
   display: none; }
 
-form {
-  max-width: 384px; }
-
 input,
 textarea,
 select {
@@ -979,33 +976,65 @@ hr {
   left: 50%;
   padding: 1.125rem 0;
   position: relative;
+  z-index: 2;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0); }
+  .hello-friend .panel-col-first {
+    width: auto; }
+  .hello-friend .panel-col-last {
+    width: 80%; }
 
 .hello-friend__img {
   float: left;
-  max-width: 150px; }
+  max-width: 150px;
+  margin-left: 1rem; }
   .hello-friend__img img {
-    max-width: 100%; }
+    width: 100%;
+    height: auto; }
 
-.hello-friend_desc {
+.hello-friend_msg {
   color: #fff;
-  float: left;
-  padding: 0 1.125rem; }
+  padding: 0 1rem; }
 
 .hello-friend__title {
   color: #fff;
+  padding: 0 1rem;
   margin-bottom: 0; }
 
 .mailchimp-form {
-  float: left; }
+  float: left;
+  width: 384px;
+  margin-left: 188px; }
 
 .contact-media {
   float: left; }
-  .contact-media img {
-    width: 60px;
-    padding: 5px; }
+  .contact-media li {
+    display: inline-block; }
+
+.contact-icon {
+  color: transparent;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  display: inline-block; }
+  .contact-icon.active {
+    color: transparent; }
+
+.contact-facebook {
+  background-image: url(../img/social-media-facebook.png); }
+
+.contact-instagram {
+  background-image: url(../img/social-media-instragram.png); }
+
+.contact-youtube {
+  background-image: url(../img/social-media-youtube.png); }
+
+.contact-blog {
+  background-image: url(../img/social-media-blog.png); }
 
 .service-info {
   margin-bottom: 6rem;

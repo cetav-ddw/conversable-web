@@ -6,13 +6,30 @@
     -webkit-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
+    background: url(../img/bg-footer.jpg) repeat-x;
 
     .panel-col-first {
         width: auto;
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+
+        @include query(700px) {
+            transform: none;
+            left: 0;
+        }
     }
 
     .panel-col-last {
-        width: 80%;
+        width: 100%;
+
+        @include query(700px) {
+            width: 70%;
+        }
+
+        @include query(850px) {
+            width: 80%;
+        }
     }
 }
 
@@ -33,19 +50,44 @@
 }
 
 .hello-friend__title {
+    text-align: center;
     color: #fff;
     padding: 0 1rem;
     margin-bottom: 0;
+
+    @include query(700px) {
+        text-align: left;
+    }
 }
 
 .mailchimp-form {
-    float: left;
-    width: 384px;
-    margin-left: 188px;
+    margin-left: 1rem;
+    text-align: center;
+
+    @include query(550px) {
+        float: left;
+    }
+
+    @include query(750px) {       
+        width: 384px;
+    }
+
+    @include query(950px) {
+        text-align: left;
+        margin-left: 190px;
+    }
 }
 
 .contact-media {
-    float: left;
+
+    @include query(400px) {
+        margin-left: 2rem;
+    }
+
+    @include query(550px) {
+        float: left;
+        margin-left: 0;
+    }
 
     li {
         display: inline-block;

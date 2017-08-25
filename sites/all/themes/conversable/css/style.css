@@ -979,11 +979,25 @@ hr {
   z-index: 2;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0); }
+  transform: translate(-50%, 0);
+  background: url(../img/bg-footer.jpg) repeat-x; }
   .hello-friend .panel-col-first {
-    width: auto; }
+    width: auto;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%; }
+    @media only screen and (min-width: 700px) {
+      .hello-friend .panel-col-first {
+        transform: none;
+        left: 0; } }
   .hello-friend .panel-col-last {
-    width: 80%; }
+    width: 100%; }
+    @media only screen and (min-width: 700px) {
+      .hello-friend .panel-col-last {
+        width: 70%; } }
+    @media only screen and (min-width: 850px) {
+      .hello-friend .panel-col-last {
+        width: 80%; } }
 
 .hello-friend__img {
   float: left;
@@ -998,19 +1012,37 @@ hr {
   padding: 0 1rem; }
 
 .hello-friend__title {
+  text-align: center;
   color: #fff;
   padding: 0 1rem;
   margin-bottom: 0; }
+  @media only screen and (min-width: 700px) {
+    .hello-friend__title {
+      text-align: left; } }
 
 .mailchimp-form {
-  float: left;
-  width: 384px;
-  margin-left: 188px; }
+  margin-left: 1rem;
+  text-align: center; }
+  @media only screen and (min-width: 550px) {
+    .mailchimp-form {
+      float: left; } }
+  @media only screen and (min-width: 750px) {
+    .mailchimp-form {
+      width: 384px; } }
+  @media only screen and (min-width: 950px) {
+    .mailchimp-form {
+      text-align: left;
+      margin-left: 190px; } }
 
-.contact-media {
-  float: left; }
-  .contact-media li {
-    display: inline-block; }
+@media only screen and (min-width: 400px) {
+  .contact-media {
+    margin-left: 2rem; } }
+@media only screen and (min-width: 550px) {
+  .contact-media {
+    float: left;
+    margin-left: 0; } }
+.contact-media li {
+  display: inline-block; }
 
 .contact-icon {
   color: transparent;
@@ -1448,8 +1480,7 @@ hr {
     clear: both; }
 
 .contact-footer {
-  background-color: #000;
-  margin-top: -55px;
-  padding: 2.25rem 0; }
+  padding: 2.25rem 0;
+  background-color: #000; }
 
 /*# sourceMappingURL=style.css.map */

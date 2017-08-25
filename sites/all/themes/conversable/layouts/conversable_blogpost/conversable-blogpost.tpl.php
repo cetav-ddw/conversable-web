@@ -15,7 +15,11 @@
 ?>
 <div class="" <?php if (!empty($css_id)) {print "id=\"$css_id\"";} ?>>
   <div class="">
-    <div class="l-group section-wrap"><?php print $content['main']; ?></div>
-    <div class="l-group section-wrap"><?php print $content['bottom']; ?></div>
+    <div class="l-group section-wrap group">
+    	<div class="article-wrapper"><?php print $content['main']; ?></div>
+    </div>
+    <div class="l-group section-wrap bg-gray">
+    	<div class="group"><?php print $content['bottom']; ?></div>
+    </div> 
   </div>
 </div>

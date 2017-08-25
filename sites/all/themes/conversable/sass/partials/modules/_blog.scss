@@ -71,7 +71,7 @@
 .blog-subtitle {
   margin: 0;
 
-  a {
+  a, div {
     border: none;
     color: $turquoise;
     font-size: 1rem;
@@ -86,6 +86,11 @@
 .blog-author {
     font-weight: bold;
     color: #A5A5A5;
+    margin-bottom: 0;
+}
+
+.article-author {
+    margin-bottom: 1rem;
 }
 
 .blog-img {
@@ -161,4 +166,22 @@
 
 .categories-text {
   font-size: 1.125rem;
+}
+
+.article-wrapper {
+  width: 100%;
+
+  @include query(700px) {
+    width: 65%;
+  }
+
+  img {
+    margin-bottom: $space-small;
+    width: 100%;
+    height: auto;
+
+    @include query(700px) {
+      width: auto;
+    }
+  }
 }

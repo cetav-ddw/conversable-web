@@ -423,7 +423,7 @@ hr {
 
 .blog-subtitle {
   margin: 0; }
-  .blog-subtitle a {
+  .blog-subtitle a, .blog-subtitle div {
     border: none;
     color: #21a295;
     font-size: 1rem; }
@@ -434,7 +434,11 @@ hr {
 
 .blog-author {
   font-weight: bold;
-  color: #A5A5A5; }
+  color: #A5A5A5;
+  margin-bottom: 0; }
+
+.article-author {
+  margin-bottom: 1rem; }
 
 .blog-img {
   width: 100%; }
@@ -493,6 +497,19 @@ hr {
 
 .categories-text {
   font-size: 1.125rem; }
+
+.article-wrapper {
+  width: 100%; }
+  @media only screen and (min-width: 700px) {
+    .article-wrapper {
+      width: 65%; } }
+  .article-wrapper img {
+    margin-bottom: 1.125rem;
+    width: 100%;
+    height: auto; }
+    @media only screen and (min-width: 700px) {
+      .article-wrapper img {
+        width: auto; } }
 
 .logo {
   border-bottom: 0;

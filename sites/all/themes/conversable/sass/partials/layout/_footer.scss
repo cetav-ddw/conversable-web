@@ -5,5 +5,9 @@
 
 .contact-footer {
     padding: $space-medium 0;
-    background-color: #000;
+    background-color: #000; 
+
+    @include query(700px) {
+		margin-top: -55px;
+    }
 }

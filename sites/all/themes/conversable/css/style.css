@@ -979,8 +979,7 @@ hr {
   z-index: 2;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  background: url(../img/bg-footer.jpg) repeat-x; }
+  transform: translate(-50%, 0); }
   .hello-friend .panel-col-first {
     width: auto;
     transform: translateX(-50%);
@@ -1482,5 +1481,8 @@ hr {
 .contact-footer {
   padding: 2.25rem 0;
   background-color: #000; }
+  @media only screen and (min-width: 700px) {
+    .contact-footer {
+      margin-top: -55px; } }
 
 /*# sourceMappingURL=style.css.map */

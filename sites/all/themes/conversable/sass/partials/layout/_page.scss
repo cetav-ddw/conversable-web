@@ -78,15 +78,6 @@
     width: 100% !important; 
     height: 101% !important;
   }
-}
-
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
-  background-size: cover;
 
   &:after {
     content: '';
@@ -97,6 +88,15 @@
     right: 0;
     bottom: 0;
   }
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background-size: cover;
 
   video {
     height: auto;

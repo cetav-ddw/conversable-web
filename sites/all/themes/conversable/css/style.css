@@ -586,6 +586,12 @@ hr {
 .main-menu__items--inverted {
   color: #fff; }
 
+.menu-front {
+  width: 100%;
+  padding-bottom: 1rem;
+  position: absolute;
+  z-index: 5; }
+
 .leads-grid--item {
   width: 100%;
   box-sizing: border-box;
@@ -1401,8 +1407,7 @@ hr {
   height: 40rem;
   overflow: hidden;
   position: relative;
-  z-index: 2;
-  top: -175px; }
+  z-index: 2; }
 
 .bg-pattern-turquoise {
   background: url(../img/patron-4.jpg) fixed;
@@ -1428,6 +1433,18 @@ hr {
   background-position: 103% -39%;
   background-size: 30%;
   background-attachment: fixed; }
+
+.video-wrapper {
+  width: 100%;
+  height: 720px;
+  position: relative;
+  padding-top: 56%; }
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 101% !important; }
 
 .bg-video {
   position: absolute;

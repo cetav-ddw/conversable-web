@@ -13,7 +13,7 @@
 <div class="wrapper">
 
 <?php if ($is_front): ?> 
-  <header class="l-group site-header" role="banner"> 
+  <header class="l-group menu-front" role="banner"> 
 <?php else: ?>  
   <header class="l-group site-header bg-pattern-turquoise" role="banner"> 
 <?php endif; ?>   

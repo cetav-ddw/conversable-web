@@ -32,7 +32,6 @@
   overflow: hidden;
   position: relative;
   z-index: 2;
-  top: -175px;
 }
 
 .bg-pattern-turquoise {
@@ -64,6 +63,21 @@
   background-position: 103% -39%;
   background-size: 30%;
   background-attachment: fixed;
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 720px;
+  position: relative; 
+  padding-top: 56%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important; 
+    height: 101% !important;
+  }
 }
 
 .bg-video {

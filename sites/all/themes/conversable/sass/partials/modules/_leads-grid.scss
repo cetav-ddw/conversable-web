@@ -3,8 +3,16 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  @include query(1000px) {
+    justify-content: space-between;
+  }
+
   h4 {
     display: block;
+    width: 100%;
+  }
+
+  &>div {
     width: 100%;
   }
 

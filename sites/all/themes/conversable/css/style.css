@@ -596,8 +596,13 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+  @media only screen and (min-width: 1000px) {
+    .leads-group__wrapper {
+      justify-content: space-between; } }
   .leads-group__wrapper h4 {
     display: block;
+    width: 100%; }
+  .leads-group__wrapper > div {
     width: 100%; }
   .leads-group__wrapper .pane-bundle-lead {
     width: 100%;

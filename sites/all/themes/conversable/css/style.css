@@ -710,6 +710,13 @@ hr {
   color: #777;
   padding-bottom: .75rem; }
 
+.service-grid__wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  .service-grid__wrapper h2 {
+    width: 100%;
+    display: block; }
+
 .service-grid {
   list-style: none;
   margin: 0;
@@ -719,7 +726,6 @@ hr {
   border-bottom: 0;
   color: #fff;
   display: block;
-  height: 100%;
   padding: 2.25rem 3.375rem;
   text-decoration: none;
   font-weight: 300; }
@@ -735,18 +741,10 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  float: left;
   position: relative; }
   @media only screen and (min-width: 700px) {
     .service-grid__item {
-      width: 50%;
-      min-height: 550px; } }
-  @media only screen and (min-width: 900px) {
-    .service-grid__item {
-      min-height: 400px; } }
-  @media only screen and (min-width: 1200px) {
-    .service-grid__item {
-      min-height: 350px; } }
+      width: 50%; } }
 
 .service-grid__content {
   font-size: 1rem; }
@@ -928,24 +926,25 @@ hr {
     height: 56px;
     margin-bottom: 2.25rem; }
 
+.testimonials-grid__wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  .testimonials-grid__wrapper h2 {
+    width: 100%;
+    display: block; }
+  .testimonials-grid__wrapper .pane-bundle-testimony {
+    border: .0625rem solid #E2EBF1;
+    background: #fff;
+    width: 100%; }
+    @media only screen and (min-width: 750px) {
+      .testimonials-grid__wrapper .pane-bundle-testimony {
+        width: 50%; } }
+
 .testimonio {
-  float: left;
+  background: #fff;
   display: inline-block;
   padding: 1rem;
-  vertical-align: top;
-  border: .0625rem solid #E2EBF1;
-  background: #fff;
-  width: 100%; }
-  @media only screen and (min-width: 750px) {
-    .testimonio {
-      min-height: 450px;
-      width: 50%; } }
-  @media only screen and (min-width: 950px) {
-    .testimonio {
-      min-height: 400px; } }
-  @media only screen and (min-width: 1200px) {
-    .testimonio {
-      min-height: 350px; } }
+  vertical-align: top; }
 
 .testimonio__avatar {
   margin-right: 20px;
@@ -969,7 +968,8 @@ hr {
   width: 100%;
   text-align: center;
   font-weight: bold;
-  margin: 20px 0 0 0; }
+  margin: 20px 0 0 0;
+  padding-bottom: 6rem; }
   @media only screen and (min-width: 750px) {
     .testimonio__cite {
       width: 50%;

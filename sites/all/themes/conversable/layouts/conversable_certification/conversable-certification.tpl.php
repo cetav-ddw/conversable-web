@@ -19,7 +19,7 @@
   <div class="">
     <div class="l-group section-wrap bg-pattern-turquoise"><?php print $content['top']; ?></div>
     <div class="l-group section-wrap certification-section"><?php print $content['main']; ?></div>
-    <div><?php print $content['middle']; ?></div>
+    <div class="l-group section-wrap group"><?php print $content['middle']; ?></div>
     <div class="l-group section-wrap bg-gray"><?php print $content['bottom']; ?></div
   </div>
 </div>

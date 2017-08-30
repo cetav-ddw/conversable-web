@@ -1176,7 +1176,7 @@ hr {
 .sticky-menu-item {
   border: none;
   display: inline-block;
-  padding: 1rem !important;
+  padding: 0 !important;
   text-align: center;
   width: 150px;
   margin: 0 !important; }
@@ -1184,8 +1184,10 @@ hr {
 .sticky-icon {
   border: none;
   color: #000;
+  display: block;
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  padding: 1rem; }
 
 .sticky-icon:before {
   background-size: contain;
@@ -1398,7 +1400,7 @@ hr {
     clear: both; }
 
 .bg-hero {
-  background-image: url("../img/hero-home.jpg");
+  background-image: url(../img/hero-home.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -1408,6 +1410,9 @@ hr {
   overflow: hidden;
   position: relative;
   z-index: 2; }
+  @media only screen and (min-width: 900px) {
+    .bg-hero {
+      background: none; } }
 
 .bg-pattern-turquoise {
   background: url(../img/patron-4.jpg) fixed;

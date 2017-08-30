@@ -25,7 +25,7 @@
 .sticky-menu-item {
     border: none;
     display: inline-block;
-    padding: $space-base !important;
+    padding: 0 !important;
     text-align: center;
     width: 150px;
     margin: 0 !important;
@@ -34,8 +34,10 @@
 .sticky-icon {
     border: none;
     color: #000;
+    display: block;
     font-family: $font-family-contrast;
     font-size: 1rem;
+    padding: 1rem;
 }
 
 .sticky-icon:before {

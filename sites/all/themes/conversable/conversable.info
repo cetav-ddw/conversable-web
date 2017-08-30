@@ -19,9 +19,18 @@ regions[footer_bottom]      = Footer Bottom
 
 stylesheets[all][] = css/style.css
 
+breakpoints[tv] = (min-width: 3456px)
+breakpoints[extrawide] = (min-width: 1200px)
+breakpoints[wide] = (min-width: 1000px)
+breakpoints[narrow] = (min-width: 600px)
+breakpoints[extranarrow] = (min-width: 320px)
+breakpoints[mobile] = (min-width: 0px)
+
 ;-------------- JS -------------
 
 scripts[] = js/picturefill.min.js
+scripts[] = js/enquire.js
+scripts[] = js/main.js
 
 ;-------------- Panels -------------
 

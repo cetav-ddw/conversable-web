@@ -22,7 +22,7 @@
 }
 
 .bg-hero {
-  background-image: url('../img/hero-home.jpg');
+  background-image: url(../img/hero-home.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -32,6 +32,10 @@
   overflow: hidden;
   position: relative;
   z-index: 2;
+
+  @include query(900px){
+    background: none;
+  }
 }
 
 .bg-pattern-turquoise {

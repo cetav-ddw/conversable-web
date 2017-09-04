@@ -1,29 +1,74 @@
 .main-menu {
-  float: right;
+  background-color: #21a295;
+  font-family: $font-family-contrast;
+  text-transform: uppercase;
+  height: 100vh;
 
-  &> .menu {
-    font-family: $font-family-contrast;
-    list-style: none;
-    text-transform: uppercase;
+  @include query(1040px) {
+    background-color: transparent;
+    float: right;
+    padding-top: initial;
+    height: 0;
+  }
+
+  & > .menu {
+    border-bottom: 1px solid #fff;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 15.75rem;
+    transform: translate(-50%, -50%);
+    width: 80%;
+
+    li {
+        list-style-image: none;
+        list-style-type: none;
+    }
+
+    @include query(400px) {
+      width: 65%;
+    }
+    
+    @include query(510px) {
+      width: initial;
+    }
+
+    @include query(1040px) {
+      border: none;
+      list-style: none;
+      position: relative;
+      top: 0;
+    }
   }
 }
 
 .main-menu__action {
   color: #fff;
-  border-bottom: 0;
-  display: block;
-  padding: 4px 16px;
-  text-decoration: none;
+  border-bottom: none;
+  font-size: 1.4rem;
+  //padding-bottom: 3rem; no esta funcionando (para dar espacio entre items)
 
   &.active {
     color: inherit;
   }
+  
+  @include query(1040px) {
+    border-bottom: 0;
+    display: block;
+    padding: 4px 16px;
+    font-size: 1rem; 
+  }
 }
 
 .main-menu__item {
-  display: inline;
-  float: left;
-  font-size: 1rem;
+  list-style: none;
+
+  @include query(1040px) {
+    display: inline;
+    float: left;
+    font-size: 1rem;    
+  }
 }
 
 .main-menu__items--inverted {
@@ -31,8 +76,25 @@
 }
 
 .menu-front {
-  width: 100%;
-  padding-bottom: $space-base;
+  @include query(1040px) {
+    width: 100%;
+    padding-bottom: $space-base;
+    position: absolute;
+    z-index: 5;    
+  }
+}
+
+.open-menu, .close-menu {
+  background-repeat: no-repeat;
   position: absolute;
-  z-index: 5;
+  top: 70px;
+  right: 20px;
+  width: 56px;
+  height: 37px;
+}
+.open-menu{
+  background-image: url(../img/open-menu.png);
+}
+.close-menu {
+  background-image: url(../img/close-menu.png);
 }

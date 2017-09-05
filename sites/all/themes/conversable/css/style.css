@@ -60,6 +60,14 @@ select {
   margin-bottom: 1.5rem;
   border: solid 1px #000; }
 
+.input-form__services {
+  width: 90%
+}
+
+.form__services {
+  width: 90%
+}
+
 label {
   border: none;
   display: block;

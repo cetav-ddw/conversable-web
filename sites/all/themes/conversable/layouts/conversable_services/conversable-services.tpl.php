@@ -22,7 +22,7 @@
 <div class="" <?php if (!empty($css_id)) {print "id=\"$css_id\"";} ?>>
   <div class="">
     <div class="l-group section-wrap bg-pattern-turquoise"><?php print $content['top']; ?></div>
-    
+
     <div class="sticky-menu" id="stickyMenu"><?php print $content['main']; ?></div>
     <div class="l-group section-wrap"><?php print $content['first_wide']; ?></div>
 
@@ -43,9 +43,10 @@
     <section id="serviceRetreats" class="l-group section-wrap bg-gray">
         <div class="group">
             <div><?php print $content['fifth_wide']; ?></div>
-            <div><?php print $content['bottom']; ?></div>
         </div>
     </section>
+
+    <div class="l-group section-wrap"><?php print $content['bottom']; ?></div>
 
   </div>
 </div>

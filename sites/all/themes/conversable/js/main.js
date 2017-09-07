@@ -57,10 +57,10 @@ jQuery(document).ready(function ($) {
       })
       .register('screen and (min-width:320px) and (max-width:550px)', {
         match: function() {
-          $("#logo").attr("src", "/conversable/sites/all/themes/conversable/img/isologo.png");
+          $("#logo").attr("src", "/sites/all/themes/conversable/img/isologo.png");
         },
         unmatch: function() {
-          $("#logo").attr("src", "/conversable/sites/default/files/logo-w-en.png");
+          $("#logo").attr("src", "/sites/default/files/logo-w-en.png");
         },
       }) 
       .register('screen and (min-width:320px) and (max-width:1039px)', {

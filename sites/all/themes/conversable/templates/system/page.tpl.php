@@ -45,4 +45,6 @@
       <?php print render($page['footer_top']); ?>
       <?php print render($page['footer_bottom']); ?>
   </footer>
+  
+  <?php print render($page['modals_bottom']); ?>
 </div>

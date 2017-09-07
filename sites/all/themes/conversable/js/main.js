@@ -57,7 +57,7 @@ jQuery(document).ready(function ($) {
       })
       .register('screen and (min-width:320px) and (max-width:550px)', {
         match: function() {
-          $("#logo").attr("src", "/conversable/sites/default/files/isologo.png");
+          $("#logo").attr("src", "/conversable/sites/all/themes/conversable/img/isologo.png");
         },
         unmatch: function() {
           $("#logo").attr("src", "/conversable/sites/default/files/logo-w-en.png");

@@ -1080,8 +1080,8 @@ hr {
       text-align: left; } }
 
 .mailchimp-form {
-  margin-left: 1rem;
-  text-align: center; }
+  margin: 50px, 0, 0, 30px;
+  text-align: center;}
   @media only screen and (min-width: 550px) {
     .mailchimp-form {
       float: left; } }
@@ -1099,7 +1099,7 @@ hr {
 @media only screen and (min-width: 550px) {
   .contact-media {
     float: right;
-    margin-right: 30px; } }
+    margin-right: 50px, 30px, 0, 0 } }
 .contact-media li {
   display: inline-block; }
 
@@ -1556,6 +1556,13 @@ hr {
     display: table; }
   .site-footer:after, .site-footer:after {
     clear: both; }
+
+.contact-mail-chimp--label {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
 
 .contact-footer {
   padding: 2.25rem 0;

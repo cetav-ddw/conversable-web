@@ -1099,7 +1099,7 @@ hr {
 @media only screen and (min-width: 550px) {
   .contact-media {
     float: right;
-    margin-right: 50px, 30px, 0, 0 } }
+    margin: 50px, 30px, 0, 0 } }
 .contact-media li {
   display: inline-block; }
 

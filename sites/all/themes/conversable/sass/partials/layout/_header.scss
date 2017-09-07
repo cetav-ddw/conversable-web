@@ -6,5 +6,9 @@
 }
 
 .site-nav {
-  padding: .25em 1rem;
+  padding: 0 1rem;
+
+  @include query(1039px) {
+    padding: .25em 1rem;
+  }
 }

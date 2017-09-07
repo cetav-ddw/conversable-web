@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function ($) {
 
   (function (window) {
@@ -66,6 +65,7 @@ jQuery(document).ready(function ($) {
       }) 
       .register('screen and (min-width:320px) and (max-width:1039px)', {
         match: function() {
+          header.addClass('bg-pattern-turquoise');
           mainMenu.addClass('hidden');
           openMenu.addClass('open-menu');
           openMenu.click(function () {
@@ -79,6 +79,7 @@ jQuery(document).ready(function ($) {
           });
         },
         unmatch: function() {
+          header.removeClass('bg-pattern-turquoise');
           mainMenu.removeClass('hidden');
           openMenu.removeClass('open-menu');
           closeMenu.removeClass('close-menu');

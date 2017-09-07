@@ -60,14 +60,6 @@ select {
   margin-bottom: 1.5rem;
   border: solid 1px #000; }
 
-.input-form__services {
-  width: 90%
-}
-
-.form__services {
-  width: 90%
-}
-
 label {
   border: none;
   display: block;
@@ -553,7 +545,8 @@ hr {
 
 .language-switcher-locale-url {
   float: right;
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 0; }
 
 .logo-grid__wrapper .pane-bundle-ally {
   display: inline-block; }
@@ -592,7 +585,8 @@ hr {
     width: 80%; }
     .main-menu > .menu li {
       list-style-image: none;
-      list-style-type: none; }
+      list-style-type: none;
+      padding-bottom: 1rem; }
     @media only screen and (min-width: 400px) {
       .main-menu > .menu {
         width: 65%; } }
@@ -640,10 +634,10 @@ hr {
 .open-menu, .close-menu {
   background-repeat: no-repeat;
   position: absolute;
-  top: 70px;
+  top: 50px;
   right: 20px;
   width: 56px;
-  height: 37px; }
+  height: 38px; }
 
 .open-menu {
   background-image: url(../img/open-menu.png); }
@@ -867,7 +861,7 @@ hr {
     color: #fff;
     font-size: 1.5rem;
     font-family: "Nunito", sans-serif, sans-serif;
-    margin: 0; }
+    margin: 1rem; }
   .events-grid h5 {
     font-weight: initial;
     margin: 10px; }
@@ -1432,7 +1426,10 @@ hr {
   z-index: 5; }
 
 .site-nav {
-  padding: .25em 1rem; }
+  padding: 0 1rem; }
+  @media only screen and (min-width: 1039px) {
+    .site-nav {
+      padding: .25em 1rem; } }
 
 .l-content {
   margin: 0 auto;

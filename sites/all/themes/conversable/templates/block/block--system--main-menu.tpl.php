@@ -47,6 +47,5 @@
 <nav id="<?php print $block_html_id; ?>" class="main-menu"<?php print $attributes; ?> role="navigation">
 
   <?php print $content ?>
-  <!-- Como cambiar el class ul y como sobreescribir propiedades de drupal -->
 
 </nav>

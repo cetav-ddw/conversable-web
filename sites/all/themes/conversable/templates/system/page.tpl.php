@@ -21,14 +21,14 @@
     <?php if ($page['TopHeader']): ?>
       <div class="helper-nav">
         <?php print render($page['TopHeader']); ?>
-      <!-- como meter el lenguaje switcher -->
+
       </div>
     <?php endif; ?>
            
     <?php if ($logo): ?>
       <div class="site-nav">
         <a href="<?php print $front_page; ?>" class="logo">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
+          <img id="logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
         </a>
       </div>
     <?php endif; ?>

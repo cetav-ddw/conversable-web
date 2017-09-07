@@ -24,6 +24,7 @@
     li {
         list-style-image: none;
         list-style-type: none;
+        padding-bottom: 1rem;
     }
 
     @include query(400px) {
@@ -47,8 +48,7 @@
   color: #fff;
   border-bottom: none;
   font-size: 1.4rem;
-  //padding-bottom: 3rem; no esta funcionando (para dar espacio entre items)
-
+  
   &.active {
     color: inherit;
   }
@@ -87,10 +87,10 @@
 .open-menu, .close-menu {
   background-repeat: no-repeat;
   position: absolute;
-  top: 70px;
+  top: 50px;
   right: 20px;
   width: 56px;
-  height: 37px;
+  height: 38px;
 }
 .open-menu{
   background-image: url(../img/open-menu.png);

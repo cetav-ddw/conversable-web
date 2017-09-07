@@ -272,6 +272,7 @@ hr {
     font-weight: normal; }
 
 .btn--principal {
+  color: #fff;
   background-color: #21a295; }
   .btn--principal:hover {
     background-color: #1e8478; }
@@ -296,6 +297,24 @@ hr {
 .btn-subscribe {
   position: relative;
   margin-left: -53px; }
+
+.btn-subscribe-footer {
+  display: inline;
+}
+
+.btn-subscribe-footer:after {
+  display: inline;
+  content: "";
+  background: center no-repeat url(../img/btn-subscribe.png) #1e8478;
+  background-size: contain;
+  width: 55px;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  border-radius: 2px;
+  right: -53px;
+  top: 0;
+}
 
 .btn-subscribe:after {
   content: "";

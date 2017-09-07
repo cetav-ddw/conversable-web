@@ -1111,22 +1111,29 @@ hr {
     .mailchimp-form {
       text-align: left;} }
 
-.contact-media {
-  margin-right: 30px;
-  margin-top: 50px;}
-  /*@media only screen and (min-width: 400px) {
-    .contact-media {
-      margin-left: 2rem; } }*/
-  @media only screen and (min-width: 550px) {
-    .contact-media {
-      margin-top: 50px;}
-    .contact-media ul {
-      width: 100%;
-     display: table;
-     text-align: center;} }
+@media only screen and (min-width: 400px) {
+  .contact-media {
+    margin-left: 2rem; } }
+@media only screen and (min-width: 550px) {
+  .contact-media {
+    float: right;
+    margin-right:30px;
+    margin-top: 50px;}
+  .contact-media ul {
+    width: auto;
+    display: inline;
+    text-align: none; }
+   }
 
 .contact-media li {
   display: inline-block; }
+  .contact-media ul {
+    width: 100%;
+   display: table;
+   text-align: center; }
+.contact-media {
+  margin-right:30px;
+  margin-top: 50px;}
 
 .contact-icon {
   color: transparent;

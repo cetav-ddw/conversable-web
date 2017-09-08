@@ -1139,7 +1139,7 @@ hr {
   @media only screen and (min-width: 765px) {
     .contact-media {
       float: right;
-      margin: 50px, 30px, 0, 30px; } }
+      margin: 50px 30px 0 30px; } }
 
 .contact-icon {
   color: transparent;

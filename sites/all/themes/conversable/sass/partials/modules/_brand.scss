@@ -1,9 +1,17 @@
 .logo {
-    border-bottom: 0;
-    float: left;
+  border-bottom: 0;
+  float: left;
 
-    img {
-        display: block;
-        width: 250px;
+  img {
+    display: block;
+    padding: .5rem;
+    width: 180px;
+
+    @include query(550px) {
+      width: 220px;
     }
+    @include query(1040px){
+      width: 250px;
+    }
+  }
 }

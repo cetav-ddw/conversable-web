@@ -109,7 +109,11 @@
 }
 
 .section-wrap {
-  padding: $space-large $space-medium;
+  padding: $space-large $space-base;
+
+  @include query(600px) {
+    padding: $space-large $space-medium;
+  }
 }
 
 .section-wrap--intro {

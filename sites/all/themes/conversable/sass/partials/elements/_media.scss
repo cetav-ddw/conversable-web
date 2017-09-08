@@ -24,6 +24,11 @@ video {
     vertical-align: middle;
 }
 
+picture img {
+    height: auto;
+    max-width: 100%;
+}
+
 // Flexible media/video
 // el contenedor del video debe ser un div
 // y agregarle la clase rwd-media

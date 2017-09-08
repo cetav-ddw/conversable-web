@@ -229,6 +229,10 @@ svg,
 video {
   vertical-align: middle; }
 
+picture img {
+  height: auto;
+  max-width: 100%; }
+
 div.rwd-media {
   position: relative;
   width: 100%;
@@ -562,12 +566,17 @@ hr {
   margin-bottom: 0; }
 
 .logo-grid__wrapper .pane-bundle-ally {
-  display: inline-block; }
+  display: inline-block;
+  text-align: center;
+  width: 100%; }
   .logo-grid__wrapper .pane-bundle-ally:before, .logo-grid__wrapper .pane-bundle-ally:after {
     content: " ";
     display: table; }
   .logo-grid__wrapper .pane-bundle-ally:after, .logo-grid__wrapper .pane-bundle-ally:after {
     clear: both; }
+  @media only screen and (min-width: 600px) {
+    .logo-grid__wrapper .pane-bundle-ally {
+      width: auto; } }
 
 .logo-item {
   width: auto;
@@ -661,27 +670,22 @@ hr {
   background-image: url(../img/close-menu.png);
   background-size: 100%; }
 
-.leads-group__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-  @media only screen and (min-width: 1000px) {
-    .leads-group__wrapper {
-      justify-content: space-between; } }
-  .leads-group__wrapper h4 {
-    display: block;
-    width: 100%; }
-  .leads-group__wrapper > div {
-    width: 100%; }
-  .leads-group__wrapper .pane-bundle-lead {
-    width: 100%;
-    max-width: 300px; }
-    @media only screen and (min-width: 750px) {
-      .leads-group__wrapper .pane-bundle-lead {
-        width: 50%; } }
-    @media only screen and (min-width: 1200px) {
-      .leads-group__wrapper .pane-bundle-lead {
-        width: 33%; } }
+.leads-group__wrapper h4 {
+  display: block;
+  width: 100%; }
+.leads-group__wrapper .pane-bundle-lead {
+  display: inline-block;
+  vertical-align: top; }
+  @media only screen and (min-width: 750px) {
+    .leads-group__wrapper .pane-bundle-lead {
+      width: 49%; } }
+  @media only screen and (min-width: 990px) {
+    .leads-group__wrapper .pane-bundle-lead {
+      max-width: 315px;
+      width: 33%; } }
+  @media only screen and (min-width: 1200px) {
+    .leads-group__wrapper .pane-bundle-lead {
+      max-width: 296px; } }
 
 .leads-grid--item {
   box-sizing: border-box;
@@ -1544,7 +1548,10 @@ hr {
     width: 100%; }
 
 .section-wrap {
-  padding: 3.375rem 2.25rem; }
+  padding: 3.375rem 1rem; }
+  @media only screen and (min-width: 600px) {
+    .section-wrap {
+      padding: 3.375rem 2.25rem; } }
 
 .section-wrap--intro {
   position: absolute;

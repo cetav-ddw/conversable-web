@@ -1,12 +1,18 @@
 .logo-grid__wrapper .pane-bundle-ally {
   @include micro-clearfix;
   display: inline-block;
+  text-align: center;
+  width: 100%;
+
+  @include query(600px) {
+    width: auto;
+  }
 }
 
 .logo-item {
-	width: auto;
-    display: inline-block;
-    vertical-align: top;
-    margin: -3px;
-    padding: 1.5rem;
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  margin: -3px;
+  padding: 1.5rem;
 }

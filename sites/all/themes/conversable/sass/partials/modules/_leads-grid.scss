@@ -1,31 +1,24 @@
 .leads-group__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  @include query(1000px) {
-    justify-content: space-between;
-  }
-
   h4 {
     display: block;
     width: 100%;
   }
 
-  &>div {
-    width: 100%;
-  }
-
   .pane-bundle-lead {
-    width: 100%;   
-    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
 
     @include query(750px) {
-      width: 50%;
+      width: 49%;
+    }
+
+    @include query(990px) {
+      max-width: 315px;
+      width: 33%;
     }
 
     @include query(1200px) {
-      width: 33%;
+      max-width: 296px;
     }
   }
 }

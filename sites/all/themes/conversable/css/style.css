@@ -327,25 +327,27 @@ hr {
   top: 0; }
 
 .user-quote {
+  background: url(../img/bigQuote.png) no-repeat;
+  background-size: 25%;
   border-bottom: .0625rem solid #a9aaad;
   margin: 0 auto;
-  padding: 6.75rem 0 0;
+  padding: 3.375rem 0;
   vertical-align: top;
   width: 100%;
-  background: url(../img/bigQuote.png) no-repeat;
   margin-top: 1.125rem; }
   @media only screen and (min-width: 450px) {
     .user-quote {
       padding: 6.75rem 3.375rem 3.375rem; } }
   @media only screen and (min-width: 650px) {
     .user-quote {
+      background-size: 20%;
       padding: 6.75rem; } }
   @media only screen and (min-width: 1000px) {
     .user-quote {
       width: 70%; } }
 
 .pane-bundle-certification-testimonials:last-child div {
-  border: none; }
+  border: 0; }
 
 .user-quote__quote {
   margin-bottom: 2.25rem;
@@ -1350,7 +1352,10 @@ hr {
 .certification-v2__subtitle {
   font-size: 1.5rem;
   text-transform: uppercase;
-  padding-bottom: 2.25rem; }
+  padding-bottom: 1.125rem; }
+  @media only screen and (min-width: 600px) {
+    .certification-v2__subtitle {
+      padding-bottom: 2.25rem; } }
 
 .certification-v2__subtitle--space-out {
   margin: 4.5rem 0 5.625rem 0;
@@ -1394,10 +1399,13 @@ hr {
 
 .certification-wrap-v2 {
   width: 100%;
-  padding: 2rem;
+  padding: 1.125rem 0;
   float: left;
   border-bottom: 1px solid #313233;
-  margin-bottom: 2rem; }
+  margin-bottom: 2.25rem; }
+  @media only screen and (min-width: 600px) {
+    .certification-wrap-v2 {
+      padding: 2.25rem; } }
   @media only screen and (min-width: 900px) {
     .certification-wrap-v2 {
       width: 33%;

@@ -7,7 +7,11 @@
 .certification-v2__subtitle {
     font-size: 1.5rem;
     text-transform: uppercase;
-    padding-bottom: $space-medium;
+    padding-bottom: $space-out-small;
+
+    @include query(600px) {
+        padding-bottom: $space-medium;
+    }
 }
 
 .certification-v2__subtitle--space-out {
@@ -68,10 +72,14 @@
 
 .certification-wrap-v2 {
     width: 100%;
-    padding: 2rem;
+    padding: $space-small 0;
     float: left;
     border-bottom: 1px solid $dark-gray;
-    margin-bottom: 2rem;
+    margin-bottom: $space-out-medium;
+
+    @include query(600px) {
+        padding: $space-medium;
+    }
 
     @include query(900px) {
         width: 33%;

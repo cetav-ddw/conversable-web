@@ -1522,7 +1522,19 @@ hr {
   overflow: hidden;
   position: relative;
   z-index: 2; }
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 800px) {
+    .bg-hero {
+      background: none;
+      height: 25rem; } }
+  @media only screen and (min-width: 900px) {
+    .bg-hero {
+      background: none;
+      height: 30rem; } }
+  @media only screen and (min-width: 1040px) {
+    .bg-hero {
+      background: none;
+      height: 35rem; } }
+  @media only screen and (min-width: 1160px) {
     .bg-hero {
       background: none;
       height: 40rem; } }

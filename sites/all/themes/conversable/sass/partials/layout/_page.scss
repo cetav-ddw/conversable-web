@@ -33,10 +33,26 @@
   position: relative;
   z-index: 2;
 
-  @include query(700px){
+  @include query(800px){
+    background: none;
+    height: 25rem;
+  }
+
+  @include query(900px){
+    background: none;
+    height: 30rem;
+  }
+
+  @include query(1040px){
+    background: none;
+    height: 35rem;
+  }
+
+  @include query(1160px){
     background: none;
     height: 40rem;
   }
+
 }
 
 .bg-pattern-turquoise {

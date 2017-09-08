@@ -72,12 +72,6 @@ label {
 textarea {
   resize: none; }
 
-.contact-mail-chimp--label {
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-bottom: 5px; }
-
 h1 {
   font-size: 2rem;
   margin: .67em 0; }
@@ -1128,23 +1122,24 @@ hr {
     .mailchimp-form {
       text-align: left; } }
 
+.contact-mail-chimp--label {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 5px; }
+
 .contact-media {
-  margin-top: 50px;
-  margin-left: 30px; }
+  margin-top: 50px; }
   .contact-media ul {
     width: 100%;
     display: table;
     text-align: center; }
   .contact-media li {
     display: inline-block; }
-  @media only screen and (min-width: 400px) {
-    .contact-media {
-      margin-left: 2rem; } }
   @media only screen and (min-width: 765px) {
     .contact-media {
       float: right;
-      margin-right: 30px;
-      margin-top: 50px; } }
+      margin: 50px, 30px, 0, 30px; } }
 
 .contact-icon {
   color: transparent;

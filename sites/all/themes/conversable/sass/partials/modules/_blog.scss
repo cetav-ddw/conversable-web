@@ -1,9 +1,9 @@
 .row-center {
-    text-align: center;
+  text-align: center;
 }
 
 .blog-links {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .blog-services-grid {
@@ -30,7 +30,7 @@
 }
 
 .blog-item {
-    margin: 40% auto;
+  margin: 40% auto;
 }
 
 .blog-services-grid--workshops {
@@ -54,7 +54,6 @@
 }
 
 .blog {
-
     @include query(950px) {
         float: left;    
         width: 70%;
@@ -155,9 +154,13 @@
 .categories-tag {
   background-color: #F3F2F2;  
   margin-bottom: $space-medium;
-  padding: $space-medium $space-small;
+  padding: $space-small;
   box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
   text-align: center;
+
+  @include query(700px) {
+    padding: $space-medium $space-small;
+  }
 
   .blog-subtitle a {
     font-size: 1.5rem; 

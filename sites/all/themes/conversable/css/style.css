@@ -298,6 +298,7 @@ hr {
     font-weight: normal; }
 
 .btn--principal {
+  color: #fff;
   background-color: #21a295; }
   .btn--principal:hover {
     background-color: #1e8478; }

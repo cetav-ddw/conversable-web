@@ -72,6 +72,12 @@ label {
 textarea {
   resize: none; }
 
+.contact-mail-chimp--label {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 5px; }
+
 h1 {
   font-size: 2rem;
   margin: .67em 0; }
@@ -438,7 +444,7 @@ hr {
   background-color: #474747;
   color: #fff;
   width: 20%;
-  padding: 0.3333333333rem 3.375rem 0.3333333333rem 0.5rem; }
+  padding: 0.33333rem 3.375rem 0.33333rem 0.5rem; }
 
 .blog-subtitle {
   margin: 0; }
@@ -1108,8 +1114,9 @@ hr {
       text-align: left; } }
 
 .mailchimp-form {
-  margin-left: 1rem;
-  text-align: center; }
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-right: 30px; }
   @media only screen and (min-width: 550px) {
     .mailchimp-form {
       float: left; } }
@@ -1118,18 +1125,25 @@ hr {
       width: 384px; } }
   @media only screen and (min-width: 950px) {
     .mailchimp-form {
-      text-align: left;
-      margin-left: 190px; } }
+      text-align: left; } }
 
-@media only screen and (min-width: 400px) {
-  .contact-media {
-    margin-left: 2rem; } }
-@media only screen and (min-width: 550px) {
-  .contact-media {
-    float: left;
-    margin-left: 0; } }
-.contact-media li {
-  display: inline-block; }
+.contact-media {
+  margin-top: 50px;
+  margin-left: 30px; }
+  .contact-media ul {
+    width: 100%;
+    display: table;
+    text-align: center; }
+  .contact-media li {
+    display: inline-block; }
+  @media only screen and (min-width: 400px) {
+    .contact-media {
+      margin-left: 2rem; } }
+  @media only screen and (min-width: 765px) {
+    .contact-media {
+      float: left;
+      margin-right: 30px;
+      margin-top: 50px; } }
 
 .contact-icon {
   color: transparent;

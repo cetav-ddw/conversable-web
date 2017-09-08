@@ -1141,14 +1141,14 @@ hr {
       margin-left: 2rem; } }
   @media only screen and (min-width: 765px) {
     .contact-media {
-      float: left;
+      float: right;
       margin-right: 30px;
       margin-top: 50px; } }
 
 .contact-icon {
   color: transparent;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   padding: 5px;
   background-repeat: no-repeat;
   background-size: contain;

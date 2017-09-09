@@ -1,16 +1,12 @@
 jQuery(document).ready(function ($) {
-
   (function (window) {
-    
     var menu = $('#stickyMenu');
     var mScroll = '';
     var openMenu = $('<div id="openMenu"></div>');
     var header = $('header');
-    header.append(openMenu);
     var mainMenu = $('#block-system-main-menu');
     var closeMenu = $('<div id="closeMenu"></div>');
-    mainMenu.prepend(closeMenu);
-    
+
     var startScroll = function() {
       $(window).scroll(function () {
         var wScroll = $(this).scrollTop();
@@ -36,24 +32,27 @@ jQuery(document).ready(function ($) {
           }
         }
       });
-    }
+    };
+
+    header.append(openMenu);
+    mainMenu.prepend(closeMenu);
     
-    var enquireModule = function () {
+    var enquireModule = function() {
       // Register when match a viewport of 650px
       enquire.register('screen and (min-width: 650px)', {
         match: function() {
-          if(menu.length) {
+          if (menu.length) {
             mScroll =  menu.offset().top;
             menu.removeClass('hidden');
             startScroll();
           }
         },
         unmatch: function() {
-          if(menu.length) {
+          if (menu.length) {
             menu.addClass('hidden');
             menu.unbind('scroll');
           }
-        },
+        }
       })
       .register('screen and (min-width:320px) and (max-width:550px)', {
         match: function() {
@@ -61,29 +60,41 @@ jQuery(document).ready(function ($) {
         },
         unmatch: function() {
           $("#logo").attr("src", "/sites/default/files/logo-w-en.png");
-        },
+        }
       }) 
-      .register('screen and (min-width:320px) and (max-width:1039px)', {
+      .register('screen and (min-width: 0) and (max-width:1039px)', {
         match: function() {
-          header.addClass('bg-pattern-turquoise');
+          var $homePage = $('.front');
+
+          if ($homePage.length) {
+            header.addClass('bg-pattern-turquoise');
+          }
+        
           mainMenu.addClass('hidden');
           openMenu.addClass('open-menu');
+
           openMenu.click(function () {
             openMenu.removeClass('open-menu');
             mainMenu.removeClass('hidden');
             closeMenu.addClass('close-menu');
           });
+
           closeMenu.click(function () {
             openMenu.addClass('open-menu');
             mainMenu.addClass('hidden');
           });
         },
         unmatch: function() {
-          header.removeClass('bg-pattern-turquoise');
+          var $homePage = $('.front');
+
+          if ($homePage.length) {
+            header.removeClass('bg-pattern-turquoise');
+          }
+
           mainMenu.removeClass('hidden');
           openMenu.removeClass('open-menu');
           closeMenu.removeClass('close-menu');
-        },
+        }
       })
     };
 

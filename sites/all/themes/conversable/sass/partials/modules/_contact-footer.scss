@@ -60,43 +60,57 @@
 }
 
 .mailchimp-form {
-    margin-left: 1rem;
-    text-align: center;
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-right: 30px;
 
     @include query(550px) {
         float: left;
     }
 
-    @include query(750px) {       
+    @include query(750px) {
         width: 384px;
     }
 
     @include query(950px) {
         text-align: left;
-        margin-left: 190px;
     }
 }
 
+
+.contact-mail-chimp--label {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+
 .contact-media {
+    margin-top: 50px;
 
-    @include query(400px) {
-        margin-left: 2rem;
-    }
-
-    @include query(550px) {
-        float: left;
-        margin-left: 0;
+    ul {
+      width: 100%;
+      display: table;
+      text-align: center;
     }
 
     li {
         display: inline-block;
     }
+
+    @include query(765px) {
+        float: right;
+        margin: 50px 30px 0 30px;
+    }
+
+
 }
 
 .contact-icon {
     color: transparent;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding: 5px;
     background-repeat: no-repeat;
     background-size: contain;

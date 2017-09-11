@@ -1176,6 +1176,16 @@ hr {
 .contact-blog {
   background-image: url(../img/social-media-blog.png); }
 
+.contact-form__panel-node {
+  width: 100%;
+  padding: 1.125rem; }
+  @media only screen and (min-width: 800px) {
+    .contact-form__panel-node {
+      width: 50%; } }
+
+.contact-form__input {
+  width: 90%; }
+
 .service-info {
   margin-bottom: 6rem;
   overflow: hidden; }

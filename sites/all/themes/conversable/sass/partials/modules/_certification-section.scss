@@ -1,17 +1,17 @@
 .certification__subtitle {
-    font-size: 2rem;
-    text-transform: uppercase;
-    padding-bottom: 2.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 2.5rem;
 }
 
 .certification-v2__subtitle {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    padding-bottom: $space-out-small;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-bottom: $space-out-small;
 
-    @include query(600px) {
-        padding-bottom: $space-medium;
-    }
+  @include query(600px) {
+    padding-bottom: $space-medium;
+  }
 }
 
 .certification-v2__subtitle--space-out {
@@ -20,81 +20,81 @@
 }
 
 .certification-wrap {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+
+  a {
     text-align: center;
+  }
 
-    a {
-        text-align: center;
-    }
-
-    h2 {
-        margin: 0;
-    }
+  h2 {
+    margin: 0;
+  }
 }
 
 .certification-descrip {
-    margin-top: 50px;
+  margin-top: 50px;
 
-    p {
-        text-align: left;
-    }
+  p {
+    text-align: left;
+  }
 }
 
 .certification-important {
-    font-weight: $font-family-base-bold-weight;
-    font-size: 1.25rem;
+  font-weight: $font-family-base-bold-weight;
+  font-size: 1.25rem;
 }
 
 .certification-details {
-    p {
+  p {
     margin: 0;
-    }
+  }
 }
 
 .certification-info {
-    text-align: center;
-    margin: 0;
-    text-align: center;
-    font-weight: $font-family-base-bold-weight;
+  text-align: center;
+  margin: 0;
+  text-align: center;
+  font-weight: $font-family-base-bold-weight;
 }
 
 .certification-required {
-    list-style: none;
-    text-align: left;
-    margin-bottom: 50px;
-    padding: 0;
+  list-style: none;
+  text-align: left;
+  margin-bottom: 50px;
+  padding: 0;
 }
 
 .certification-subscription {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .certification-wrap-v2 {
-    width: 100%;
-    padding: $space-small 0;
-    float: left;
-    border-bottom: 1px solid $dark-gray;
-    margin-bottom: $space-out-medium;
+  width: 100%;
+  padding: $space-small 0;
+  float: left;
+  border-bottom: 1px solid $dark-gray;
+  margin-bottom: $space-out-medium;
 
-    @include query(600px) {
-        padding: $space-medium;
-    }
+  @include query(600px) {
+    padding: $space-medium;
+  }
 
-    @include query(900px) {
-        width: 33%;
-        border-bottom: none;
-        border-right: 1px solid $dark-gray;
-    }
+  @include query(900px) {
+    width: 33%;
+    border-bottom: none;
+    border-right: 1px solid $dark-gray;
+  }
 }
 
 .certification-btn {
-    a {
-        color: #fff;
-        border: none;
-    }
+  a {
+    color: #fff;
+    border: none;
+  }
 }
 
 .certified-last div {
-    border: none;
+  border: none;
 }

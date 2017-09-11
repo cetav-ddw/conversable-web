@@ -397,19 +397,20 @@ hr {
   border: 1rem solid #f3f2f2;
   display: inline;
   float: left;
-  margin-bottom: 0.5em !important;
+  margin: 0 0 0.5em 0 !important;
   width: 100%;
   min-height: 200px;
   padding: 1rem;
   text-align: center; }
   @media only screen and (min-width: 650px) {
     .blog-services-grid {
-      width: 48%;
-      min-height: 250px; } }
+      margin: 0 0 0.5em 0.5em !important;
+      min-height: 250px;
+      width: 48%; } }
   @media only screen and (min-width: 1200px) {
     .blog-services-grid {
-      width: 24%;
-      min-height: 300px; } }
+      min-height: 300px;
+      width: 24%; } }
 
 .blog-item {
   margin: 40% auto; }
@@ -1041,11 +1042,11 @@ hr {
   vertical-align: top; }
 
 .testimonio__avatar {
-  margin-right: 20px;
   width: 100%;
   text-align: center; }
   @media only screen and (min-width: 400px) {
     .testimonio__avatar {
+      margin: 0 1.5rem;
       width: auto;
       float: left; } }
   .testimonio__avatar img {
@@ -1066,8 +1067,12 @@ hr {
   padding-bottom: 6rem; }
   @media only screen and (min-width: 750px) {
     .testimonio__cite {
-      width: 50%;
-      float: left; } }
+      float: left;
+      width: 50%; } }
+  @media only screen and (min-width: 830px) {
+    .testimonio__cite {
+      float: left;
+      width: 60%; } }
   @media only screen and (min-width: 1200px) {
     .testimonio__cite {
       width: 65%; } }
@@ -1312,7 +1317,11 @@ hr {
 
 .sticky-menu {
   background-color: transparent;
-  margin-bottom: 1.125rem; }
+  margin-bottom: 1.125rem;
+  display: none; }
+  @media only screen and (min-width: 650px) {
+    .sticky-menu {
+      display: block; } }
 
 .sticky-menu__wrap {
   background-color: #F3F2F2;

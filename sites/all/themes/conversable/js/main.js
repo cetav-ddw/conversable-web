@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
   (function (window) {
-    var menu = $('#stickyMenu');
+    var stickyMenu = $('#stickyMenu');
     var mScroll = '';
     var openMenu = $('<div id="openMenu"></div>');
     var header = $('header');
@@ -12,9 +12,9 @@ jQuery(document).ready(function ($) {
         var wScroll = $(this).scrollTop();
         
         if (wScroll >= mScroll) {
-          menu.addClass('sticky-menu-fixed');
+          stickyMenu.addClass('sticky-menu-fixed');
         } else {    
-          menu.removeClass('sticky-menu-fixed');
+          stickyMenu.removeClass('sticky-menu-fixed');
         }
       });
       
@@ -41,16 +41,14 @@ jQuery(document).ready(function ($) {
       // Register when match a viewport of 650px
       enquire.register('screen and (min-width: 650px)', {
         match: function() {
-          if (menu.length) {
-            mScroll =  menu.offset().top;
-            menu.removeClass('hidden');
+          if (stickyMenu.length) {
+            mScroll =  stickyMenu.offset().top;
             startScroll();
           }
         },
         unmatch: function() {
-          if (menu.length) {
-            menu.addClass('hidden');
-            menu.unbind('scroll');
+          if (stickyMenu.length) {
+            stickyMenu.unbind('scroll');
           }
         }
       })

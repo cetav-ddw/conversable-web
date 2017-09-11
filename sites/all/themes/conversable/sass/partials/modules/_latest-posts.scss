@@ -9,7 +9,7 @@
   background-color: $gray;
 	float: left;
   margin: 5px;
-	padding: 15px;
+	padding: 2rem;
   width: 100%;
 
   @include query(900px) {
@@ -28,7 +28,7 @@
   img {
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 1rem 0;
   }
 }
 

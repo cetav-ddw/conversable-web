@@ -46,7 +46,7 @@
         </div>
     </section>
 
-    <div class="l-group section-wrap"><?php print $content['bottom']; ?></div>
+    <div class="l-group section-wrap bg-gray"><?php print $content['bottom']; ?></div>
 
   </div>
 </div>

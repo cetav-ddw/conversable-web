@@ -34,15 +34,27 @@
 	margin-bottom: $space-base;
 }
 
+.service-title:before {
+    content: "";
+    background: center no-repeat url(../img/workshopblanco.png) #65c8c1;
+    background-size: contain;
+    width: 55px;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+}
+
 .service-video {
-	position: relative; 
+	position: relative;
 	padding-top: 56%;
 
 	iframe {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%; 
+		width: 100%;
 		height: 100%;
 	}
 }
@@ -106,6 +118,3 @@
 .service-events-Retreats:before {
 	background-image: url("../img/servicios-img-default-retreats.jpg");
 }
-
-
-

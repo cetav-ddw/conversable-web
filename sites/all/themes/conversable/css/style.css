@@ -1212,6 +1212,17 @@ hr {
   font-weight: bold;
   margin-bottom: 1rem; }
 
+.service-title:before {
+  content: "";
+  background: center no-repeat url(../img/workshopblanco.png) #65c8c1;
+  background-size: contain;
+  width: 55px;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  border-radius: 2px;
+  top: 0; }
+
 .service-video {
   position: relative;
   padding-top: 56%; }

@@ -26,11 +26,11 @@
 }
 
 .testimonio__avatar {
-  margin-right: 20px;
   width: 100%;
   text-align: center;
-
+  
   @include query(400px) {
+    margin: 0 1.5rem;
     width: auto;
     float: left;
   }
@@ -56,8 +56,13 @@
   padding-bottom: 6rem;
 
   @include query(750px) {
-    width: 50%;
     float: left; 
+    width: 50%;
+  }
+
+  @include query(830px) {
+    float: left; 
+    width: 60%;
   }
 
   @include query(1200px) {

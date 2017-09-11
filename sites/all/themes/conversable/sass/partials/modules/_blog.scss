@@ -12,20 +12,21 @@
   border: 1rem solid $gray;
   display: inline;
   float: left;
-  margin-bottom: 0.5em !important;
+  margin: 0 0 0.5em 0 !important;
   width: 100%;
   min-height: 200px;
   padding: $space-base;
   text-align: center;
 
   @include query(650px) {
-    width: 48%;
+    margin: 0 0 0.5em 0.5em !important;
     min-height: 250px;
+    width: 48%;
   }
 
   @include query(1200px) {
-    width: 24%;
     min-height: 300px;
+    width: 24%;
   }
 }
 

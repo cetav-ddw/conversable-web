@@ -2,7 +2,11 @@
     width: 100%;
     padding: $space-small;
 
-    @include query(800px) {
+    @include query(500px) {
+        width: 80%;
+    }
+
+    @include query(874px) {
         width: 50%;
         float: left;
     }
@@ -11,4 +15,8 @@
 
 .contact-form__input {
   width: 100%
+}
+
+input.form-checkbox, input.form-radio {
+    vertical-align: none;
 }

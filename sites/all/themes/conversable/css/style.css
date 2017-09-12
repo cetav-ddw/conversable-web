@@ -585,7 +585,7 @@ hr {
 
 .help-block {
   display: none; }
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 874px) {
     .help-block {
       width: 50%;
       float: right;
@@ -1207,13 +1207,19 @@ hr {
 .contact-form__panel-node {
   width: 100%;
   padding: 1.125rem; }
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 500px) {
+    .contact-form__panel-node {
+      width: 80%; } }
+  @media only screen and (min-width: 874px) {
     .contact-form__panel-node {
       width: 50%;
       float: left; } }
 
 .contact-form__input {
   width: 100%; }
+
+input.form-checkbox, input.form-radio {
+  vertical-align: none; }
 
 .service-info {
   margin-bottom: 2.25rem;

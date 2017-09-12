@@ -1,7 +1,7 @@
 .help-block{
     display: none;
 
-    @include query(800px) {
+    @include query(874px) {
         width: 50%;
         float: right;
         text-align: initial;

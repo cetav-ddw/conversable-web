@@ -585,9 +585,13 @@ hr {
 
 .help-block {
   display: none; }
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 800px) {
     .help-block {
-      text-align: initial; } }
+      width: 50%;
+      float: right;
+      text-align: initial;
+      display: inline-block;
+      padding: 2.25rem; } }
   .help-block h4 {
     border-bottom: 1px solid #1e8478; }
   .help-block h4:before {
@@ -1205,7 +1209,8 @@ hr {
   padding: 1.125rem; }
   @media only screen and (min-width: 800px) {
     .contact-form__panel-node {
-      width: 50%; } }
+      width: 50%;
+      float: left; } }
 
 .contact-form__input {
   width: 100%; }

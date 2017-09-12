@@ -1,8 +1,12 @@
 .help-block{
     display: none;
 
-    @include query(850px) {
+    @include query(800px) {
+        width: 50%;
+        float: right;
         text-align: initial;
+        display: inline-block;
+        padding: $space-medium;
     }
 
     h4 {

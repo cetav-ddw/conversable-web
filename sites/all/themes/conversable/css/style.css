@@ -438,7 +438,7 @@ hr {
   background-color: #474747;
   color: #fff;
   width: 20%;
-  padding: 0.3333333333rem 3.375rem 0.3333333333rem 0.5rem; }
+  padding: 0.33333rem 3.375rem 0.33333rem 0.5rem; }
 
 .blog-subtitle {
   margin: 0; }
@@ -582,6 +582,15 @@ hr {
   float: right;
   list-style: none;
   margin-bottom: 0; }
+
+.help-block {
+  text-align: initial; }
+  @media only screen and (min-width: 850px) {
+    .help-block {
+      display: none; } }
+
+.contact-form__input {
+  width: 100%; }
 
 .logo-grid__wrapper .pane-bundle-ally {
   display: inline-block;

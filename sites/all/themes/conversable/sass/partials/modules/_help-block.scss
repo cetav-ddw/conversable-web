@@ -1,0 +1,13 @@
+.help-block {
+    text-align: initial;
+
+
+    @include query(850px) {
+        display: none;
+    }
+
+}
+
+.contact-form__input {
+  width: 100%
+}

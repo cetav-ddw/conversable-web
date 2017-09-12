@@ -584,13 +584,22 @@ hr {
   margin-bottom: 0; }
 
 .help-block {
-  text-align: initial; }
+  display: none; }
   @media only screen and (min-width: 850px) {
     .help-block {
-      display: none; } }
-
-.contact-form__input {
-  width: 100%; }
+      text-align: initial; } }
+  .help-block h4 {
+    border-bottom: 1px solid #1e8478; }
+  .help-block h4:before {
+    content: "";
+    background: no-repeat url(../img/camilo-hello.png);
+    background-size: contain;
+    display: inline-block;
+    width: 100%;
+    height: 85px;
+    text-align: center;
+    margin-bottom: 2.25rem;
+    background-position: center; }
 
 .logo-grid__wrapper .pane-bundle-ally {
   display: inline-block;

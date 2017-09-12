@@ -14,11 +14,8 @@
 
   @include query(650px) {
     background-size: 20%;
+    max-width: 800px;
     padding: $space-xxx-large;
-  }
-
-  @include query(1000px) {
-    width: 70%;   
   }
 }
 

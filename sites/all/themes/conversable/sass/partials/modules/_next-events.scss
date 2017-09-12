@@ -1,8 +1,12 @@
 .next-events {
-    margin-bottom: 9rem;
+    margin-bottom: $space-x-out-large;
     overflow: hidden;
 
-    &>img {
+    @include query(700px) {
+        padding: $space-xxx-out-large;
+    }
+
+    & > img {
         float: left;
         margin-right: 3rem;
         width: 25%;

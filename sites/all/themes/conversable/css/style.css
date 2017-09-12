@@ -345,10 +345,8 @@ hr {
   @media only screen and (min-width: 650px) {
     .user-quote {
       background-size: 20%;
+      max-width: 800px;
       padding: 6.75rem; } }
-  @media only screen and (min-width: 1000px) {
-    .user-quote {
-      width: 70%; } }
 
 .pane-bundle-certification-testimonials:last-child div {
   border: 0; }
@@ -440,7 +438,7 @@ hr {
   background-color: #474747;
   color: #fff;
   width: 20%;
-  padding: 0.33333rem 3.375rem 0.33333rem 0.5rem; }
+  padding: 0.3333333333rem 3.375rem 0.3333333333rem 0.5rem; }
 
 .blog-subtitle {
   margin: 0; }
@@ -450,8 +448,11 @@ hr {
     font-size: 1rem; }
 
 .blog-title {
-  font-size: 1.5rem;
-  margin: 0; }
+  font-size: 1.25rem; }
+  @media only screen and (min-width: 700px) {
+    .blog-title {
+      font-size: 1.5rem;
+      margin: 0; } }
 
 .blog-author {
   font-weight: bold;
@@ -529,8 +530,8 @@ hr {
       width: 65%; } }
   .article-wrapper img {
     margin-bottom: 1.125rem;
-    width: 100%;
-    height: auto; }
+    width: 100% !important;
+    height: auto !important; }
     @media only screen and (min-width: 700px) {
       .article-wrapper img {
         width: auto; } }
@@ -1192,8 +1193,11 @@ hr {
   width: 100%; }
 
 .service-info {
-  margin-bottom: 6rem;
+  margin-bottom: 2.25rem;
   overflow: hidden; }
+  @media only screen and (min-width: 900px) {
+    .service-info {
+      margin-bottom: 5.625rem; } }
   .service-info img {
     width: 100%;
     height: auto; }
@@ -1296,24 +1300,72 @@ hr {
 
 .title-event {
   font-weight: bold;
-  font-size: 1.5rem; }
+  font-size: 1.25rem; }
+  @media only screen and (min-width: 700px) {
+    .title-event {
+      font-size: 1.5rem; } }
 
 .service-events:before {
   content: "";
   margin-right: 3rem;
   width: 261px;
-  height: 178px;
   display: inline-block;
   background-size: contain; }
   @media only screen and (min-width: 700px) {
     .service-events:before {
       float: left; } }
 
-.service-events-Workshop:before {
-  background-image: url("../img/servicios-img-default-workshops.jpg"); }
+.i18n-en .service-events-Workshop:before,
+.i18n-en .service-events-Retreats:before {
+  background-image: none;
+  font-weight: bold;
+  height: auto; }
+  @media only screen and (min-width: 700px) {
+    .i18n-en .service-events-Workshop:before,
+    .i18n-en .service-events-Retreats:before {
+      content: ''; } }
+.i18n-en .service-events-Workshop:before {
+  content: '[Workshop]';
+  color: #65c8c1; }
+  @media only screen and (min-width: 700px) {
+    .i18n-en .service-events-Workshop:before {
+      background-image: url("../img/servicios-img-default-workshops.jpg");
+      content: '';
+      height: 178px; } }
+.i18n-en .service-events-Retreats:before {
+  content: '[Retreat]';
+  color: #65c8c1; }
+  @media only screen and (min-width: 700px) {
+    .i18n-en .service-events-Retreats:before {
+      background-image: url("../img/servicios-img-default-retreats.jpg");
+      content: '';
+      height: 178px; } }
 
-.service-events-Retreats:before {
-  background-image: url("../img/servicios-img-default-retreats.jpg"); }
+.i18n-es .service-events-Workshop:before,
+.i18n-es .service-events-Retreats:before {
+  background-image: none;
+  font-weight: bold;
+  height: auto; }
+  @media only screen and (min-width: 700px) {
+    .i18n-es .service-events-Workshop:before,
+    .i18n-es .service-events-Retreats:before {
+      content: ''; } }
+.i18n-es .service-events-Workshop:before {
+  content: '[Workshop]';
+  color: #65c8c1; }
+  @media only screen and (min-width: 700px) {
+    .i18n-es .service-events-Workshop:before {
+      background-image: url("../img/servicios-img-default-workshops.jpg");
+      content: '';
+      height: 178px; } }
+.i18n-es .service-events-Retreats:before {
+  content: '[Retreat]';
+  color: #65c8c1; }
+  @media only screen and (min-width: 700px) {
+    .i18n-es .service-events-Retreats:before {
+      background-image: url("../img/servicios-img-default-retreats.jpg");
+      content: '';
+      height: 178px; } }
 
 .sticky-menu {
   background-color: transparent;
@@ -1510,8 +1562,11 @@ hr {
   border: none; }
 
 .next-events {
-  margin-bottom: 9rem;
+  margin-bottom: 4.5rem;
   overflow: hidden; }
+  @media only screen and (min-width: 700px) {
+    .next-events {
+      padding: 6.75rem; } }
   .next-events > img {
     float: left;
     margin-right: 3rem;

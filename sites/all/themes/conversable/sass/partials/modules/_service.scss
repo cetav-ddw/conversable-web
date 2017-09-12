@@ -1,163 +1,230 @@
 .service-info {
-	margin-bottom: 6rem;
-	overflow: hidden;
+  margin-bottom: $space-out-medium;
+  overflow: hidden;
 
-	img {
-		width: 100%;
-		height: auto;
-	}
+  @include query(900px) {
+    margin-bottom: $space-xx-out-large
+  }
 
-	.panel-col-first{
-		width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
 
-		@include query(700px) {
-			float: left;
-			width: 50%;
-		}
-	}
+  .panel-col-first{
+    width: 100%;
 
-	.panel-col-last{
-		width: 100%;
-		margin-top: 2em;
+    @include query(700px) {
+      float: left;
+      width: 50%;
+    }
+  }
 
-		@include query(700px) {
-			margin-top: 0;
-			float: left;
-			width: 50%;
-		}
-	}
+  .panel-col-last{
+    width: 100%;
+    margin-top: 2em;
+
+    @include query(700px) {
+      margin-top: 0;
+      float: left;
+      width: 50%;
+    }
+  }
 }
 
 .service-title {
-	font: 1.5rem $font-family-contrast;
-	font-weight: bold;
-	margin-bottom: $space-base;
-	margin-left: 50px;
+  font: 1.5rem $font-family-contrast;
+  font-weight: bold;
+  margin-bottom: $space-base;
+  margin-left: 50px;
 
-	@include query(650px) {
-		margin-left: 0px;
-	}
+  @include query(650px) {
+    margin-left: 0px;
+  }
 
 }
 
 .service-title:before {
-	width: 47px;
-	height: 32px;
-	display: inline-block;
-	position: absolute;
-	border-radius: 2px;
-	margin-left: -58px;
+  width: 47px;
+  height: 32px;
+  display: inline-block;
+  position: absolute;
+  border-radius: 2px;
+  margin-left: -58px;
 }
 
 .service-title-workshops:before {
-	content: "";
-	background: center no-repeat url(../img/workshopsblanco.png) #65c8c1;
-	background-size: contain;
+  content: "";
+  background: center no-repeat url(../img/workshopsblanco.png) #65c8c1;
+  background-size: contain;
 
-	@include query(650px) {
-		background: none;
-	}
+  @include query(650px) {
+    background: none;
+  }
 }
 
 .service-title-coaching:before {
-	content: "";
-	background: center no-repeat url(../img/coachingblanco.png) $salmon;
-	background-size: contain;
+  content: "";
+  background: center no-repeat url(../img/coachingblanco.png) $salmon;
+  background-size: contain;
 
-	@include query(650px) {
-		background: none;
-	}
+  @include query(650px) {
+    background: none;
+  }
 }
 
 .service-title-consulting:before {
-	content: "";
-	background: center no-repeat url(../img/consultingblanco.png) $violet;
-	background-size: contain;
+  content: "";
+  background: center no-repeat url(../img/consultingblanco.png) $violet;
+  background-size: contain;
 
-	@include query(650px) {
-		background: none;
-	}
+  @include query(650px) {
+    background: none;
+  }
 }
 
 .service-title-retreats:before {
-	content: "";
-	background: center no-repeat url(../img/retreatsblanco.png) #b3d4fc;
-	background-size: contain;
+  content: "";
+  background: center no-repeat url(../img/retreatsblanco.png) #b3d4fc;
+  background-size: contain;
 
-	@include query(650px) {
-		background: none;
-	}
+  @include query(650px) {
+    background: none;
+  }
 }
 
 .service-video {
-	position: relative;
-	padding-top: 56%;
+  position: relative;
+  padding-top: 56%;
 
-	iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .btn-request-content {
-	margin-top: 1.5em;
-	text-align: center;
+  margin-top: 1.5em;
+  text-align: center;
 
-	@include query(700px) {
-		margin-top: 3em;
-	}
+  @include query(700px) {
+    margin-top: 3em;
+  }
 
-	p {
-		margin-bottom: 0;
-	}
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .service-events {
-	overflow: hidden;
+  overflow: hidden;
 
-	strong {
-		display: block;
-	}
+  strong {
+    display: block;
+  }
 
-	&>p {
-		margin-bottom: 0;
-	}
+  &>p {
+    margin-bottom: 0;
+  }
 }
 
 .service-events-content {
-	width: 100%;
+  width: 100%;
 
-	@include query(700px) {
-	    float: left;
-	    width: 50%;
-	}
+  @include query(700px) {
+      float: left;
+      width: 50%;
+  }
 }
 
 .title-event {
-	font-weight: bold;
-	font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+
+  @include query(700px) {
+      font-size: 1.5rem;
+  }
 }
 
 .service-events:before{
-	content: "";
-	margin-right: 3rem;
-	width: 261px;
-	height: 178px;
-	display: inline-block;
-	background-size: contain;
+  content: "";
+  margin-right: 3rem;
+  width: 261px;
+  display: inline-block;
+  background-size: contain;
 
-	@include query(700px) {
-		float: left;
-	}
+  @include query(700px) {
+    float: left;
+  }
 }
 
-.service-events-Workshop:before {
-	background-image: url("../img/servicios-img-default-workshops.jpg");
+.i18n-en {
+  .service-events-Workshop:before,
+  .service-events-Retreats:before {
+    background-image: none;
+    font-weight: bold;
+    height: auto;
+
+    @include query(700px) {
+      content: '';
+    }
+  }
+  .service-events-Workshop:before {
+    content: '[Workshop]';
+    color: #65c8c1;
+
+    @include query(700px) {
+      background-image: url("../img/servicios-img-default-workshops.jpg");
+      content: '';
+      height: 178px;
+    }
+  }
+  .service-events-Retreats:before {
+    content: '[Retreat]';
+    color: #65c8c1;
+
+    @include query(700px) {
+      background-image: url("../img/servicios-img-default-retreats.jpg");
+      content: '';
+      height: 178px;
+    }
+  }
 }
 
-.service-events-Retreats:before {
-	background-image: url("../img/servicios-img-default-retreats.jpg");
+.i18n-es {
+  .service-events-Workshop:before,
+  .service-events-Retreats:before {
+    background-image: none;
+    font-weight: bold;
+    height: auto;
+
+    @include query(700px) {
+      content: '';
+    }
+  }
+  .service-events-Workshop:before {
+    content: '[Workshop]';
+    color: #65c8c1;
+
+    @include query(700px) {
+      background-image: url("../img/servicios-img-default-workshops.jpg");
+      content: '';
+      height: 178px;
+    }
+  }
+  .service-events-Retreats:before {
+    content: '[Retreat]';
+    color: #65c8c1;
+
+    @include query(700px) {
+      background-image: url("../img/servicios-img-default-retreats.jpg");
+      content: '';
+      height: 178px;
+    }
+  }
 }
+
+

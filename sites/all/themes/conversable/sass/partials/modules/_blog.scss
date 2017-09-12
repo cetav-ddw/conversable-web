@@ -79,8 +79,12 @@
 }
 
 .blog-title {
+  font-size: 1.25rem;
+
+  @include query(700px) {
     font-size: 1.5rem;
     margin: 0;
+  }
 }
 
 .blog-author {
@@ -181,8 +185,8 @@
 
   img {
     margin-bottom: $space-small;
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
 
     @include query(700px) {
       width: auto;

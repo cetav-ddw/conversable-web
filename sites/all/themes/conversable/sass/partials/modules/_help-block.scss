@@ -2,7 +2,7 @@
     display: none;
 
     @include query(874px) {
-        width: 50%;
+        width: 30%;
         float: right;
         text-align: initial;
         display: inline-block;

@@ -20,9 +20,9 @@
 <div class="" <?php if (!empty($css_id)) {print "id=\"$css_id\"";} ?>>
   <div class="">
     <div class="l-group bg-hero"><?php print $content['top']; ?></div>
-    <div class="l-group section-wrap group"><div class="group service-grid__wrapper"><?php print $content['main']; ?></div></div>
-    <div class="l-group section-wrap group"><?php print $content['middle_above']; ?></div>
-    <div class="l-group section-wrap group"><?php print $content['middle']; ?></div>
+    <div class="l-group section-wrap"><div class="group service-grid__wrapper"><?php print $content['main']; ?></div></div>
+    <div class="l-group section-wrap bg-gray"><?php print $content['middle_above']; ?></div>
+    <div class="l-group section-wrap"><?php print $content['middle']; ?></div>
     <div class="l-group section-wrap bg-gray"><div class="group testimonials-grid__wrapper"><?php print $content['middle_below']; ?></div></div>
     <div class="l-group section-wrap"><?php print $content['bottom']; ?></div
   </div>

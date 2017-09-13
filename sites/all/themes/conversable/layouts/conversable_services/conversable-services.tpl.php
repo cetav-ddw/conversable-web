@@ -26,8 +26,8 @@
     <div class="sticky-menu" id="stickyMenu"><?php print $content['main']; ?></div>
     <div class="l-group section-wrap"><?php print $content['first_wide']; ?></div>
 
-    <section id="serviceWorkshop" class="l-group section-wrap group">
-        <div><?php print $content['second_wide']; ?></div>
+    <section id="serviceWorkshop" class="l-group section-wrap">
+        <div class="group"><?php print $content['second_wide']; ?></div>
     </section>
 
     <section id="serviceConsultancies" class="l-group section-wrap bg-gray">

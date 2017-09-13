@@ -45,18 +45,18 @@
 }
 
 .service-title:before {
-  width: 47px;
+  width: 36px;
   height: 32px;
   display: inline-block;
   position: absolute;
   border-radius: 2px;
-  margin-left: -58px;
+  margin-left: -48px;
 }
 
 .service-title-workshops:before {
   content: "";
   background: center no-repeat url(../img/workshopsblanco.png) #65c8c1;
-  background-size: contain;
+  background-size: 80%;
 
   @include query(650px) {
     background: none;
@@ -66,7 +66,7 @@
 .service-title-coaching:before {
   content: "";
   background: center no-repeat url(../img/coachingblanco.png) $salmon;
-  background-size: contain;
+  background-size: 80%;
 
   @include query(650px) {
     background: none;
@@ -76,7 +76,7 @@
 .service-title-consulting:before {
   content: "";
   background: center no-repeat url(../img/consultingblanco.png) $violet;
-  background-size: contain;
+  background-size: 80%;
 
   @include query(650px) {
     background: none;
@@ -86,7 +86,7 @@
 .service-title-retreats:before {
   content: "";
   background: center no-repeat url(../img/retreatsblanco.png) #b3d4fc;
-  background-size: contain;
+  background-size: 80%;
 
   @include query(650px) {
     background: none;
@@ -226,5 +226,3 @@
     }
   }
 }
-
-

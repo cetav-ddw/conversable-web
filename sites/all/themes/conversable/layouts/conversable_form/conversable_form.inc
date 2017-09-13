@@ -13,6 +13,5 @@ $plugin = array(
   'css' => 'conversable_form.css',
   'regions' => array(
     'single_wide' => t('Single wide'),
-    'right_wide' => t('Right wide'),
   ),
 );

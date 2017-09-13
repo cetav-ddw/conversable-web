@@ -330,6 +330,31 @@ hr {
   right: -53px;
   top: 0; }
 
+button, input[type="submit"], .button {
+  color: #fff;
+  background-color: #21a295;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: normal;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 2px; }
+  button:hover, input[type="submit"]:hover, .button:hover {
+    background-color: #1e8478; }
+
+.button:after {
+  content: "";
+  background: center no-repeat url(../img/btn-subscribe.png) #1e8478;
+  background-size: contain;
+  width: 55px;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  border-radius: 2px;
+  top: 0; }
+
 .user-quote {
   background: url(../img/bigQuote.png) no-repeat;
   background-size: 25%;

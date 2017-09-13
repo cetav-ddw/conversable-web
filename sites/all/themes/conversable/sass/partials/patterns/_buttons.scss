@@ -67,3 +67,33 @@
     right: -53px;
     top: 0;
 }
+
+button, input[type="submit"], .button {
+  color: #fff;
+  background-color: $turquoise;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: normal;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 2px;
+
+  &:hover {
+      background-color: $turquoise-accent;
+  }
+
+}
+
+.button:after {
+    content: "";
+    background: center no-repeat url(../img/btn-subscribe.png) $turquoise-accent;
+    background-size: contain;
+    width: 55px;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+}

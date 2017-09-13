@@ -16,6 +16,6 @@
 <div class="" <?php if (!empty($css_id)) {print "id=\"$css_id\"";} ?>>
   <div class="">
     <div class="l-group section-wrap bg-pattern-turquoise"><?php print $content['top']; ?></div>
-    <div class="l-group section-wrap group"><?php print $content['single_wide']; ?></div>
+    <div class="l-group section-wrap"><div class="group"><?php print $content['single_wide']; ?></div></div>
   </div>
 </div>

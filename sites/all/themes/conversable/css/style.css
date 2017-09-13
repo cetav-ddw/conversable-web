@@ -1319,7 +1319,7 @@ input.form-checkbox, input.form-radio {
 
 .service-title-retreats:before {
   content: "";
-  background: center no-repeat url(../img/retreatsblanco.png) #b3d4fc;
+  background: center no-repeat url(../img/retreatsblanco.png) #5f9fc0;
   background-size: 80%; }
   @media only screen and (min-width: 650px) {
     .service-title-retreats:before {

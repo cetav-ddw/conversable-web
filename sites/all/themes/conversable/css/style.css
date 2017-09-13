@@ -621,11 +621,6 @@ button, input[type="submit"], .button {
       text-align: initial;
       display: inline-block;
       padding: 2.25rem; } }
-  @media only screen and (min-width: 1400px) {
-    .help-block {
-      width: 30%;
-      margin-right: 9%;
-      max-width: 380px; } }
   .help-block h4 {
     border-bottom: 1px solid #1e8478; }
   .help-block h4:before {

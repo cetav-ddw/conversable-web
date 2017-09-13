@@ -23,7 +23,9 @@
     <div class="l-group section-wrap"><?php print $content['main']; ?></div>
     <div class="l-group section-wrap section-wrap--tight"><?php print $content['middle_above']; ?></div>
     <div class="l-group section-wrap"><div class="group team-grid__wrapper"><?php print $content['middle']; ?></div></div>
-    <div class="l-group section-wrap section-wrap--tight bg-gray"><div class="group leads-group__wrapper"><?php print $content['middle_below']; ?></div></div>
+    <div class="l-group section-wrap section-wrap--tight bg-gray">
+      <div class="group row-center leads-group__wrapper"><?php print $content['middle_below']; ?></div>
+    </div>
     <div class="l-group section-wrap"><div class="group logo-grid__wrapper"><?php print $content['bottom']; ?></div></div
   </div>
 </div>

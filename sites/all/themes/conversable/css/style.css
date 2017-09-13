@@ -72,6 +72,10 @@ label {
 textarea {
   resize: none; }
 
+#user-login {
+  padding: 4.5rem;
+  margin-left: 5.625rem; }
+
 h1 {
   font-size: 2rem;
   margin: .67em 0; }

@@ -1805,6 +1805,11 @@ input.form-checkbox, input.form-radio {
   background-color: #fff;
   position: relative; }
 
+.profile {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3.375rem; }
+
 .site-footer {
   background: url(../img/bg-footer.jpg) repeat-x; }
   .site-footer:before, .site-footer:after {

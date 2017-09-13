@@ -89,7 +89,7 @@
 .video-wrapper {
   display: none;
   padding-top: 56%;
-  position: relative; 
+  position: relative;
   width: 100%;
 
   @include query(700px){
@@ -100,7 +100,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100% !important; 
+    width: 100% !important;
     height: 101% !important;
   }
 
@@ -158,4 +158,9 @@
 .wrapper {
   background-color: #fff;
   position: relative;
+}
+.profile {
+  width: 80%;
+  margin: 0 auto;
+  padding: $space-large;
 }

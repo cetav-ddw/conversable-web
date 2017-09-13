@@ -9,6 +9,12 @@
         padding: $space-medium;
     }
 
+    @include query(1400px) {
+        width: 30%;
+        margin-right: 9%;
+        max-width: 380px;
+    }
+
     h4 {
       border-bottom: 1px solid #1e8478;
     }

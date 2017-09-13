@@ -184,7 +184,7 @@
   }
   .service-events-Retreats:before {
     content: '[Retreat]';
-    color: #65c8c1;
+    color: #5f9fc0;
 
     @include query(700px) {
       background-image: url("../img/servicios-img-default-retreats.jpg");

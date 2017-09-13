@@ -1393,7 +1393,7 @@ input.form-checkbox, input.form-radio {
       height: 178px; } }
 .i18n-en .service-events-Retreats:before {
   content: '[Retreat]';
-  color: #65c8c1; }
+  color: #5f9fc0; }
   @media only screen and (min-width: 700px) {
     .i18n-en .service-events-Retreats:before {
       background-image: url("../img/servicios-img-default-retreats.jpg");
@@ -1625,7 +1625,7 @@ input.form-checkbox, input.form-radio {
   overflow: hidden; }
   @media only screen and (min-width: 700px) {
     .next-events {
-      padding: 6.75rem; } }
+      padding-bottom: 4.5rem; } }
   .next-events > img {
     float: left;
     margin-right: 3rem;

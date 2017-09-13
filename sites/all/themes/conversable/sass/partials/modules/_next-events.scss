@@ -3,7 +3,7 @@
     overflow: hidden;
 
     @include query(700px) {
-        padding: $space-xxx-out-large;
+        padding-bottom: $space-x-large;
     }
 
     & > img {

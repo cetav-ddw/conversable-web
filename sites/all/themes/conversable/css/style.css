@@ -1234,7 +1234,8 @@ button, input[type="submit"], .button {
   padding: 1.125rem; }
   @media only screen and (min-width: 500px) {
     .contact-form__panel-node {
-      width: 80%; } }
+      width: 80%;
+      max-width: 600px; } }
   @media only screen and (min-width: 874px) {
     .contact-form__panel-node {
       width: 50%;

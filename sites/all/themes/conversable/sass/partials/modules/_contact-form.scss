@@ -4,6 +4,7 @@
 
     @include query(500px) {
         width: 80%;
+        max-width: 600px;
     }
 
     @include query(874px) {

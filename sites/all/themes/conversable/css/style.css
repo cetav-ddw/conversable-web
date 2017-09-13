@@ -1420,7 +1420,7 @@ input.form-checkbox, input.form-radio {
       height: 178px; } }
 .i18n-es .service-events-Retreats:before {
   content: '[Retreat]';
-  color: #65c8c1; }
+  color: #5f9fc0; }
   @media only screen and (min-width: 700px) {
     .i18n-es .service-events-Retreats:before {
       background-image: url("../img/servicios-img-default-retreats.jpg");

@@ -1,16 +1,16 @@
 .contact-form__panel-node {
-    width: 100%;
-    padding: $space-small;
+  width: 100%;
+  padding: $space-small;
 
-    @include query(500px) {
-        width: 80%;
-        max-width: 600px;
-    }
+  @include query(500px) {
+      width: 80%;
+      max-width: 600px;
+  }
 
-    @include query(874px) {
-        width: 50%;
-        float: left;
-    }
+  @include query(874px) {
+      width: 50%;
+      float: left;
+  }
 
 }
 
@@ -19,5 +19,17 @@
 }
 
 input.form-checkbox, input.form-radio {
-    vertical-align: none;
+  vertical-align: none;
+}
+
+.links {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 $space-large $space-large $space-large;
+}
+
+.webform-confirmation {
+  width: 80%;
+  margin: 0 auto;
+  padding: $space-large $space-large 0 $space-large;
 }

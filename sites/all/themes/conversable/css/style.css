@@ -1251,6 +1251,16 @@ button, input[type="submit"], .button {
 input.form-checkbox, input.form-radio {
   vertical-align: none; }
 
+.links {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 3.375rem 3.375rem 3.375rem; }
+
+.webform-confirmation {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3.375rem 3.375rem 0 3.375rem; }
+
 .service-info {
   margin-bottom: 2.25rem;
   overflow: hidden; }

@@ -1249,7 +1249,11 @@ button, input[type="submit"], .button {
   width: 100%; }
 
 input.form-checkbox, input.form-radio {
-  vertical-align: none; }
+  vertical-align: initial; }
+
+input.form-checkbox,
+input.form-radio {
+  vertical-align: initial; }
 
 .links {
   width: 80%;

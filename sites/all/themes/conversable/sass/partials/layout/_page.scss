@@ -155,6 +155,16 @@
   padding-top: $space-medium;
 }
 
+.section-tabs {
+  @include micro-clearfix;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  ul.primary {
+    padding-top: $space-medium;
+  }
+}
+
 .wrapper {
   background-color: #fff;
   position: relative;

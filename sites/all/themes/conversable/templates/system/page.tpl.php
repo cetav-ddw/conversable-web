@@ -11,7 +11,6 @@
 ?>
 
 <div class="wrapper">
-
 <?php if ($is_front): ?> 
   <header class="l-group menu-front" role="banner"> 
 <?php else: ?>  
@@ -34,7 +33,6 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-
   </header>
 
   <?php if ($page['content']): ?>

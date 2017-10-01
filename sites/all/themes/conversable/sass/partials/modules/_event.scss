@@ -1,111 +1,114 @@
 .event-info {
-    margin-bottom: 6rem;
-    overflow: hidden;
+  margin-bottom: 6rem;
+  overflow: hidden;
 }
 
 .event--space {
-    margin: 0;
+  margin: 0;
 }
 
 .event-info-list {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .event-content {
+  width: 100%;
+
+  @include query(600px) {
+    width: 75%;
+  }
+
+  @include query(850px) {
+    float: left;
+    width: 48%;
+  }
+
+  h3 {
+    margin-bottom: $space-medium;
+  }
+
+  .field-label {
+    text-transform: uppercase;
+  }
+
+  img {
+    margin-top: 1rem;
     width: 100%;
-
-    @include query(600px) {
-        width: 75%;
-    }
-
-    @include query(850px) {
-        float: left;
-        width: 48%;
-    }
-
-    h3 {
-        margin-bottom: $space-medium;
-    }
-
-    .field-label {
-        text-transform: uppercase;
-    }
-
-    img {
-        margin-top: 1rem;
-        width: 100%;
-        height: auto;
-    }
+    height: auto;
+  }
 }
 
 .event-sidebar {
-    text-align: center;
-    width: 100%;
-    margin-top: $space-out-large;
+  text-align: center;
+  width: 100%;
+  margin-top: $space-out-large;
 
-    @include query(600px) {
-        width: 75%;
-    }
+  @include query(600px) {
+    width: 75%;
+  }
 
-    @include query(850px) {
-        float: right;
-        width: 35%;    
-        margin-top: 0;    
-    }
+  @include query(850px) {
+    float: right;
+    width: 35%;    
+    margin-top: 0;    
+  }
 
-    p {
-        font-size: 1rem;
-    }
+  p {
+    font-size: 1rem;
+  }
 }
 
 .img--workshops {
-    border-left: 8px solid $turquoise;
-    width: 100%;
+  border-left: 8px solid $turquoise;
+  width: 100%;
 }
 
-
 .buy-content {
-    margin-top: $space-base;
+  margin-top: $space-base;
 
-    @include query(700px) {
-        clear: both;
-        margin-left: 309px;
-        margin-top: 0;
-    }
+  @include query(700px) {
+    clear: both;
+    display: inline-block;
+    margin-left: 309px;
+  }
 
-    @include query(1050px) {
-        clear: none;
-        margin: 0;
-        float: right;
-        width: 17%;
-    }
+  @include query(1050px) {
+    clear: none;
+    margin: 0;
+    float: right;
+    width: 17%;
+  }
 }
 
 .img-paypal:after {
-    content: "";
-    width: 155px;
-    height: 39px;
+  content: "";
+  width: 155px;
+  height: 39px;
+  display: block;
+  background-image: url("../img/paypal.png"); 
+  background-size: contain;
+  margin-top: 1rem;
+
+  @include query(1050px) {
     display: inline-block;
-    background-image: url("../img/paypal.png"); 
-    background-size: contain;
-    margin-top: 1rem;
+  }
 }
 
 .img-paypal--width {
-    width: 40%;
+  width: 40%;
 }
 
 .accounts {
-    margin: $space-x-out-large 0;
-    text-align: initial;
+  margin: $space-x-out-large 0;
+  text-align: initial;
 
-    h4:before {
-        content: "";
-        background: no-repeat url(../img/logo.png);
-        background-size: contain;
-        display: block;
-        width: 224px;
-        height: 56px;
-        margin-bottom: 2.25rem;
-    }
+  h4:before {
+    content: "";
+    background: no-repeat url(../img/logo.png);
+    background-size: contain;
+    display: block;
+    width: 224px;
+    height: 56px;
+    margin-bottom: 2.25rem;
+  }
 }

@@ -320,7 +320,9 @@ hr {
 
 .btn-subscribe {
   position: relative;
-  margin-left: -53px; }
+  margin-left: -53px;
+  font-size: 1rem;
+  font-weight: normal; }
 
 .btn-subscribe:after {
   content: "";
@@ -1040,8 +1042,8 @@ button, input[type="submit"], .button {
   @media only screen and (min-width: 700px) {
     .buy-content {
       clear: both;
-      margin-left: 309px;
-      margin-top: 0; } }
+      display: inline-block;
+      margin-left: 309px; } }
   @media only screen and (min-width: 1050px) {
     .buy-content {
       clear: none;
@@ -1053,10 +1055,13 @@ button, input[type="submit"], .button {
   content: "";
   width: 155px;
   height: 39px;
-  display: inline-block;
+  display: block;
   background-image: url("../img/paypal.png");
   background-size: contain;
   margin-top: 1rem; }
+  @media only screen and (min-width: 1050px) {
+    .img-paypal:after {
+      display: inline-block; } }
 
 .img-paypal--width {
   width: 40%; }

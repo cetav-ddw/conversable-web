@@ -665,7 +665,6 @@ button, input[type="submit"], .button {
     .main-menu {
       background-color: transparent;
       float: right;
-      padding-top: initial;
       height: 0; } }
   .main-menu > .menu {
     border-bottom: 1px solid #fff;
@@ -685,7 +684,7 @@ button, input[type="submit"], .button {
         width: 65%; } }
     @media only screen and (min-width: 510px) {
       .main-menu > .menu {
-        width: initial; } }
+        width: auto; } }
     @media only screen and (min-width: 1040px) {
       .main-menu > .menu {
         border: none;
@@ -1809,7 +1808,8 @@ input.form-radio {
 
 .section-intro {
   margin-bottom: 3rem;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .section-wrap--tight {
   padding-bottom: 2.25rem;

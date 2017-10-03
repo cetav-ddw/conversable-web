@@ -7,7 +7,6 @@
   @include query(1040px) {
     background-color: transparent;
     float: right;
-    padding-top: initial;
     height: 0;
   }
 
@@ -32,7 +31,7 @@
     }
     
     @include query(510px) {
-      width: initial;
+      width: auto;
     }
 
     @include query(1040px) {

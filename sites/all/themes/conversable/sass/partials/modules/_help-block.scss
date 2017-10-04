@@ -27,7 +27,10 @@
 }
 
 .help-block-certification {
-  display: none;
+  width: 100%;
+  text-align: initial;
+  display: inline-block;
+  padding: 3rem;
 
   @include query(874px) {
     width: 30%;
@@ -42,7 +45,6 @@
   }
 
   h2:before {
-    content: "";
     content: "";
     background: no-repeat url(../img/logo.png);
     background-size: contain;

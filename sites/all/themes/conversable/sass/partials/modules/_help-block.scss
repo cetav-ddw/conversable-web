@@ -25,3 +25,30 @@
     background-position: center;
   }
 }
+
+.help-block-certification {
+  display: none;
+
+  @include query(874px) {
+    width: 30%;
+    float: right;
+    text-align: initial;
+    display: inline-block;
+    padding: $space-medium;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h2:before {
+    content: "";
+    content: "";
+    background: no-repeat url(../img/logo.png);
+    background-size: contain;
+    display: block;
+    width: 224px;
+    height: 56px;
+    margin-bottom: 2.25rem;
+  }
+}

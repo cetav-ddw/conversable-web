@@ -670,8 +670,6 @@ button, input[type="submit"], .button {
     border-bottom: 1px solid #fff;
     left: 50%;
     position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     top: 15.75rem;
     transform: translate(-50%, -50%);
     width: 80%; }
@@ -722,6 +720,9 @@ button, input[type="submit"], .button {
     padding-bottom: 1rem;
     position: absolute;
     z-index: 5; } }
+
+.panels-ipe-editing .menu-front {
+  z-index: 0; }
 
 .open-menu,
 .close-menu {

@@ -1663,6 +1663,9 @@ input.form-radio {
 .certified-last div {
   border: none; }
 
+.spacing-btn {
+  margin-top: 2.25rem; }
+
 .next-events {
   margin-bottom: 4.5rem;
   overflow: hidden; }

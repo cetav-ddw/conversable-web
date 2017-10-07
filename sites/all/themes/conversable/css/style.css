@@ -469,7 +469,7 @@ button, input[type="submit"], .button {
   background-color: #474747;
   color: #fff;
   width: 20%;
-  padding: 0.3333333333rem 3.375rem 0.3333333333rem 0.5rem; }
+  padding: 0.33333rem 3.375rem 0.33333rem 0.5rem; }
 
 .blog-subtitle {
   margin: 0; }
@@ -635,6 +635,30 @@ button, input[type="submit"], .button {
     text-align: center;
     margin-bottom: 2.25rem;
     background-position: center; }
+
+.help-block-certification {
+  width: 100%;
+  text-align: initial;
+  display: inline-block;
+  padding: 3rem; }
+  @media only screen and (min-width: 874px) {
+    .help-block-certification {
+      width: 30%;
+      float: right;
+      text-align: initial;
+      display: inline-block;
+      padding: 2.25rem;
+      margin-top: 2.25rem; } }
+  .help-block-certification h2 {
+    font-size: 1rem; }
+  .help-block-certification h2:before {
+    content: "";
+    background: no-repeat url(../img/logo.png);
+    background-size: contain;
+    display: block;
+    width: 224px;
+    height: 56px;
+    margin-bottom: 2.25rem; }
 
 .logo-grid__wrapper .pane-bundle-ally {
   display: inline-block;
@@ -1640,6 +1664,9 @@ input.form-radio {
 
 .certified-last div {
   border: none; }
+
+.spacing-btn {
+  margin-top: 2.25rem; }
 
 .next-events {
   margin-bottom: 4.5rem;

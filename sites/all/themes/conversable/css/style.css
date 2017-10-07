@@ -469,7 +469,7 @@ button, input[type="submit"], .button {
   background-color: #474747;
   color: #fff;
   width: 20%;
-  padding: 0.33333rem 3.375rem 0.33333rem 0.5rem; }
+  padding: 0.3333333333rem 3.375rem 0.3333333333rem 0.5rem; }
 
 .blog-subtitle {
   margin: 0; }
@@ -724,7 +724,10 @@ button, input[type="submit"], .button {
     .main-menu__action {
       border-bottom: 0;
       display: block;
-      padding: 4px 16px;
+      padding: 17px 16px 4px;
+      font-size: .875rem; } }
+  @media only screen and (min-width: 1060px) {
+    .main-menu__action {
       font-size: 1rem; } }
 
 .main-menu__item {

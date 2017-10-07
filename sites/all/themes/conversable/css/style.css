@@ -1142,6 +1142,8 @@ button, input[type="submit"], .button {
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0); }
+  .hello-friend a {
+    color: #fff; }
   .hello-friend .panel-col-first {
     width: auto;
     transform: translateX(-50%);

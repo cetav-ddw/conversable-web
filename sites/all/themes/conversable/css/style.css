@@ -60,6 +60,10 @@ select {
   margin-bottom: 1.5rem;
   border: solid 1px #000; }
 
+input,
+textarea {
+  padding: 4px 10px; }
+
 label {
   border: none;
   display: block;
@@ -1833,9 +1837,10 @@ input.form-radio {
       padding: 3.375rem 2.25rem; } }
 
 .section-wrap--intro {
+  left: 50%;
+  max-width: 500px;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2; }
 

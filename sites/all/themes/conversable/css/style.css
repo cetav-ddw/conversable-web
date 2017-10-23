@@ -473,7 +473,7 @@ button, input[type="submit"], .button {
   background-color: #474747;
   color: #fff;
   width: 20%;
-  padding: 0.3333333333rem 3.375rem 0.3333333333rem 0.5rem; }
+  padding: 0.33333rem 3.375rem 0.33333rem 0.5rem; }
 
 .blog-subtitle {
   margin: 0; }
@@ -1487,7 +1487,7 @@ input.form-radio {
       display: block; } }
 
 .sticky-menu__wrap {
-  background-color: #F3F2F2;
+  background-color: rgba(243, 242, 242, 0.75);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   margin: auto;
   width: 614px; }

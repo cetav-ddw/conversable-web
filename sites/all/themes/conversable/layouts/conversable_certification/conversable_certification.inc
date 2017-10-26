@@ -13,6 +13,7 @@ $plugin = array(
   'css' => 'conversable_certification.css',
   'regions' => array(
     'top' => t('Top'),
+    'wide' => t('Wide'),
     'main' => t('Main'),
     'middle' => t('Middle'),
     'bottom' => t('Bottom'),

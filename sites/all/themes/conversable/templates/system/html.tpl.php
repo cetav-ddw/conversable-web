@@ -54,6 +54,16 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Nunito:300,300i,700" rel="stylesheet">
   <?php print $styles; ?>
   <?php print $scripts; ?>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97987654-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-97987654-1');
+  </script>
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

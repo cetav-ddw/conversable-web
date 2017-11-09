@@ -340,6 +340,12 @@ hr {
   right: -53px;
   top: 0; }
 
+.btn-buy {
+  position: relative;
+  margin-left: -53px;
+  font-size: 1rem;
+  font-weight: normal; }
+
 .btn-buy:after {
   content: "";
   background: center no-repeat url(../img/btn-buy.png) #1e8478;

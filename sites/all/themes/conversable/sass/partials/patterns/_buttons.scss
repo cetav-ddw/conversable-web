@@ -70,6 +70,13 @@
     top: 0;
 }
 
+.btn-buy {
+    position: relative;
+    margin-left: -53px;
+    font-size: 1rem;
+    font-weight: normal
+} 
+
 .btn-buy:after {
     content: "";
     background: center no-repeat url(../img/btn-buy.png) $turquoise-accent;

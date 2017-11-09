@@ -322,41 +322,33 @@ hr {
     border: 2px solid #fff;
     color: #fff; }
 
-.btn-subscribe {
+.btn-icon {
   position: relative;
   margin-left: -53px;
   font-size: 1rem;
   font-weight: normal; }
+
+.btn-icon:after {
+  width: 55px;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  border-radius: 2px;
+  right: -53px;
+  top: 0; }
 
 .btn-subscribe:after {
   content: "";
   background: center no-repeat url(../img/btn-subscribe.png) #1e8478;
-  background-size: contain;
-  width: 55px;
-  height: 100%;
-  display: inline-block;
-  position: absolute;
-  border-radius: 2px;
-  right: -53px;
-  top: 0; }
-
-.btn-buy {
-  position: relative;
-  margin-left: -53px;
-  font-size: 1rem;
-  font-weight: normal; }
+  background-size: contain; }
 
 .btn-buy:after {
   content: "";
   background: center no-repeat url(../img/btn-buy.png) #1e8478;
-  background-size: contain;
-  width: 55px;
-  height: 100%;
-  display: inline-block;
-  position: absolute;
-  border-radius: 2px;
-  right: -53px;
-  top: 0; }
+  background-size: contain; }
+
+.btn--center {
+  margin: 0 auto; }
 
 button, input[type="submit"], .button {
   color: #fff;
@@ -1692,6 +1684,9 @@ input.form-radio {
 
 .spacing-btn {
   margin-top: 2.25rem; }
+
+.certification__btn--center {
+  display: inline-block; }
 
 .next-events {
   margin-bottom: 4.5rem;

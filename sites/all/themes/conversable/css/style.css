@@ -385,7 +385,7 @@ a.btn-icon-event {
   font-size: 1rem;
   font-weight: normal; }
 
-a.btn-event:after {
+a.btn-icon-event:after {
   width: 55px;
   height: 100%;
   display: inline-block;

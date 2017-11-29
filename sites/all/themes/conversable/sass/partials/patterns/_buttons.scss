@@ -74,9 +74,13 @@
     background-size: contain;
 }
 
+.btn-buy {
+    background-color: $blue;
+}
+
 .btn-buy:after {
     content: "";
-    background: center no-repeat url(../img/btn-buy.png) $turquoise-accent;
+    background: center no-repeat url(../img/btn-buy.png) $dark-blue;
     background-size: contain;
 }
 

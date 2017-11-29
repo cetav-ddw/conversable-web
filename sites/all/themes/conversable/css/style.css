@@ -345,6 +345,9 @@ hr {
 .btn-buy {
   background-color: #5f9fc0; }
 
+.btn-buy:hover {
+  background-color: #4a7990; }
+
 .btn-buy:after {
   content: "";
   background: center no-repeat url(../img/btn-buy.png) #4a7990;

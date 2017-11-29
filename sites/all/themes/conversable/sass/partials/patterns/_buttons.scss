@@ -78,6 +78,10 @@
     background-color: $blue;
 }
 
+.btn-buy:hover {
+    background-color: $dark-blue;
+}
+
 .btn-buy:after {
     content: "";
     background: center no-repeat url(../img/btn-buy.png) $dark-blue;

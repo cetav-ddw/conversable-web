@@ -110,6 +110,19 @@ button, input[type="submit"], .button {
 
 }
 
+.btn-event a
+a.btn-event {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 2px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+
 .btn-register-event a,
 a.btn-register-event {
   color: #fff;

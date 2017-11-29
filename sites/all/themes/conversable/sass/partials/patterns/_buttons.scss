@@ -110,14 +110,36 @@ button, input[type="submit"], .button {
 
 }
 
-.button:after {
-    content: "";
-    background: center no-repeat url(../img/btn-subscribe.png) $turquoise-accent;
-    background-size: contain;
+.btn-register-event a,
+a.btn-register-event {
+  color: #fff;
+  background-color: $turquoise;
+
+  &:hover {
+    background-color: $turquoise-accent;
+  }
+}
+
+.btn-icon-event a,
+a.btn-icon-register {
+    position: relative;
+    margin-left: -53px;
+    font-size: 1rem;
+    font-weight: normal
+}
+
+a.btn-event:after {
     width: 55px;
     height: 100%;
     display: inline-block;
     position: absolute;
     border-radius: 2px;
+    right: -53px;
     top: 0;
+}
+
+a.btn-subscribe-event:after {
+    content: "";
+    background: center no-repeat url(../img/btn-subscribe.png) $turquoise-accent;
+    background-size: contain;
 }

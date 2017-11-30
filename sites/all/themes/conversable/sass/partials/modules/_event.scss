@@ -80,6 +80,29 @@
   }
 }
 
+.register-content {
+  padding-top: 1rem;
+
+  @include query(700px) {
+    clear: both;
+    display: inline-block;
+    margin-left: 309px;  
+  }
+
+  @include query(950px) {
+    clear: both;
+    display: inline-block;
+    margin-left: 1rem;
+  }
+
+  @include query(1050px) {
+    clear: none;
+    margin: 0;
+    float: right;
+    width: 17%;
+  }
+}
+
 .img-paypal:after {
   content: "";
   width: 155px;

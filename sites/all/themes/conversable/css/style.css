@@ -337,20 +337,23 @@ hr {
   right: -53px;
   top: 0; }
 
+.btn-subscribe {
+  background-color: #5f9fc0; }
+  .btn-subscribe:hover {
+    background-color: #4a7990; }
+
 .btn-subscribe:after {
   content: "";
-  background: center no-repeat url(../img/btn-subscribe.png) #1e8478;
+  background-color: #5f9fc0;
+  background: center no-repeat url(../img/btn-subscribe.png) #4a7990;
   background-size: contain; }
 
-.btn-buy {
+.btn-subscribe {
   background-color: #5f9fc0; }
-
-.btn-buy:hover {
-  background-color: #4a7990; }
 
 .btn-buy:after {
   content: "";
-  background: center no-repeat url(../img/btn-buy.png) #4a7990;
+  background: center no-repeat url(../img/btn-buy.png) #1e8478;
   background-size: contain; }
 
 .btn--center {
@@ -370,45 +373,49 @@ button, input[type="submit"], .button {
   button:hover, input[type="submit"]:hover, .button:hover {
     background-color: #1e8478; }
 
-.btn-event a
+.btn-event a,
 a.btn-event {
   border: none;
   cursor: pointer;
   display: inline-block;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1.7rem;
   border-radius: 2px;
   font-size: 1rem;
   color: #fff;
-  font-weight: normal; }
+  font-weight: normal;
+  text-decoration: none; }
+
+.btn-event--center a,
+a.btn-event--center {
+  margin-right: 45px;
+  font-size: 1rem; }
 
 .btn-register-event a,
 a.btn-register-event {
   color: #fff;
-  background-color: #21a295; }
+  background-color: #5f9fc0; }
   .btn-register-event a:hover,
   a.btn-register-event:hover {
-    background-color: #1e8478; }
+    background-color: #4a7990; }
 
 .btn-icon-event a,
 a.btn-icon-event {
   position: relative;
-  margin-left: -53px;
-  font-size: 1rem;
   font-weight: normal; }
 
-a.btn-icon-event:after {
+.btn-icon-event a:after {
   width: 55px;
   height: 100%;
   display: inline-block;
   position: absolute;
   border-radius: 2px;
-  right: -53px;
   top: 0; }
 
-a.btn-subscribe-event:after {
+.btn-subscribe-event a:after {
   content: "";
-  background: center no-repeat url(../img/btn-subscribe.png) #1e8478;
-  background-size: contain; }
+  background: center no-repeat url(../img/btn-subscribe.png) #4a7990;
+  background-size: contain;
+  margin-left: 1.2rem; }
 
 .user-quote {
   background: url(../img/bigQuote.png) no-repeat;
@@ -1122,6 +1129,25 @@ a.btn-subscribe-event:after {
       margin-left: 309px; } }
   @media only screen and (min-width: 1050px) {
     .buy-content {
+      clear: none;
+      margin: 0;
+      float: right;
+      width: 17%; } }
+
+.register-content {
+  padding-top: 1rem; }
+  @media only screen and (min-width: 700px) {
+    .register-content {
+      clear: both;
+      display: inline-block;
+      margin-left: 309px; } }
+  @media only screen and (min-width: 950px) {
+    .register-content {
+      clear: both;
+      display: inline-block;
+      margin-left: 1rem; } }
+  @media only screen and (min-width: 1050px) {
+    .register-content {
       clear: none;
       margin: 0;
       float: right;

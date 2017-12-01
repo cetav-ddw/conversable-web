@@ -1108,6 +1108,8 @@ a.btn-subscribe-event:after {
       margin-top: 0; } }
   .event-sidebar p {
     font-size: 1rem; }
+  .event-sidebar .img-paypal:after {
+    margin: 0 auto; }
 
 .img--workshops {
   border-left: 8px solid #21a295;
@@ -1133,8 +1135,10 @@ a.btn-subscribe-event:after {
   height: 39px;
   display: block;
   background-image: url("../img/paypal.png");
-  background-size: contain;
-  margin-top: 1rem; }
+  background-size: contain; }
+  @media only screen and (min-width: 700px) {
+    .img-paypal:after {
+      margin: 0 auto; } }
   @media only screen and (min-width: 1050px) {
     .img-paypal:after {
       display: inline-block; } }
@@ -1153,6 +1157,23 @@ a.btn-subscribe-event:after {
     width: 224px;
     height: 56px;
     margin-bottom: 2.25rem; }
+
+.event-paypal--es,
+.event-paypal--en {
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  margin: 0; }
+
+.event-paypal--es {
+  background-image: url(../img/btn-comprar.png); }
+  .event-paypal--es:hover {
+    background-image: url(../img/btn-comprar--hover.png); }
+
+.event-paypal--en {
+  background-image: url(../img/btn-buy.png); }
+  .event-paypal--en:hover {
+    background-image: url(../img/btn-buy--hover.png); }
 
 .testimonials-grid__wrapper {
   display: flex;

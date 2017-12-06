@@ -1,0 +1,93 @@
+<?php
+
+
+/**
+ * Implements hook_permission()
+ * Define all permissions inside of the module.
+ */
+function alter_default_language_permission() {
+
+  return array(
+    'administer alter default language' => array(
+      'title' => t('Alter default language'),
+      'description' => t('Perform administration tasks for alter default language.'),
+    ),
+  );
+
+}
+
+
+/**
+ * Implements hook_menu()
+ */
+function alter_default_language_menu() {
+
+  $items = array();
+
+  $items['admin/config/alter-default-language'] = array(
+    'title' => 'Alter default language',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('alter_default_language_settings_form'),
+    'access arguments' => array('administer alter default language'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'alter_default_language.admin.inc',
+  );
+
+  return $items;
+
+}
+
+
+/**
+ * Implements hook_init().
+ * Check if the current page indicates the language in the URL, otherwise, the Spanish language is added to the URL.
+ */
+function alter_default_language_init() {
+
+  global $base_url;
+
+  if (
+    module_exists('i18n') &&
+    arg(1) != 'add' &&
+    arg(2) != 'edit'
+  ) {
+
+    // Initialize variables.
+    $sep = '';
+    $new_path = '';
+    // Get default language
+    $default_language = variable_get('alter_default_language_default_language', 'es');
+    // Define URL.
+    $url = 'http' . (isset($_SERVER['HTTPS']) && strtoupper($_SERVER['HTTPS']) == 'ON' ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+    // Get only page path.
+    $page_path = array_filter(explode('/', str_replace($base_url, '', $url)));
+    // First Element's Key.
+    $first_key = key($page_path);
+
+    // Validate if firts element is a allowed language.
+    if (isset($first_key) && array_key_exists($page_path[$first_key], language_list())) {
+      return;
+    }
+
+    foreach ($page_path as $key => $value) {
+      $new_path .= $sep . $value;
+      $sep = '/';
+    }
+
+    if ($new_path == '') {
+      drupal_goto($base_url . '/' . $default_language);
+    } elseif (
+      (drupal_valid_path($new_path))
+      ||
+      (
+        ($alias = drupal_lookup_path('source', $new_path, $default_language)) 
+        &&
+        ($alias !== '')
+      )
+    ) {
+      drupal_goto($base_url . '/' . $default_language . '/' . $new_path);
+    }
+
+  }
+
+}

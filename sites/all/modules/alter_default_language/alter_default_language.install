@@ -1,0 +1,11 @@
+<?php
+
+
+/**
+ * Uninstall module.
+ */
+function alter_default_language_uninstall() {
+
+  variable_del('alter_default_language_default_language');
+
+}

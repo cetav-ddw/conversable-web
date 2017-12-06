@@ -1,0 +1,3 @@
+name = Alter default language
+description = In Drupal, the best way to create a multilingual website is to set English as default language, but for some reason it's necessary to display the site in another language when entering for the first time. This module performs redirects on pages do not indicate the language in the URL, adding your  preference language to URL.
+core = 7.x

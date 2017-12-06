@@ -18,7 +18,7 @@
 <div class="" <?php if (!empty($css_id)) {print "id=\"$css_id\"";} ?>>
   <div class="">
     <div class="l-group section-wrap bg-pattern-turquoise"><?php print $content['top']; ?></div>
-    <div class="l-group section-wrap"><div class="group"><?php print $content['wide']; ?></div></div>
+    <div class="l-group section-wrap"><?php print $content['wide']; ?></div>
     <div class="l-group section-wrap certification-section"><?php print $content['main']; ?></div>
     <div class="l-group section-wrap"><div class="group"><?php print $content['middle']; ?></div></div>
     <div class="l-group section-wrap bg-gray"><?php print $content['bottom']; ?></div

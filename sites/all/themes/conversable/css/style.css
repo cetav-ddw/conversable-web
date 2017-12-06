@@ -322,16 +322,13 @@ hr {
     border: 2px solid #fff;
     color: #fff; }
 
-.btn-subscribe {
+.btn-icon {
   position: relative;
   margin-left: -53px;
   font-size: 1rem;
   font-weight: normal; }
 
-.btn-subscribe:after {
-  content: "";
-  background: center no-repeat url(../img/btn-subscribe.png) #1e8478;
-  background-size: contain;
+.btn-icon:after {
   width: 55px;
   height: 100%;
   display: inline-block;
@@ -339,6 +336,28 @@ hr {
   border-radius: 2px;
   right: -53px;
   top: 0; }
+
+.btn-subscribe {
+  background-color: #5f9fc0; }
+  .btn-subscribe:hover {
+    background-color: #4a7990; }
+
+.btn-subscribe:after {
+  content: "";
+  background-color: #5f9fc0;
+  background: center no-repeat url(../img/btn-subscribe.png) #4a7990;
+  background-size: contain; }
+
+.btn-subscribe {
+  background-color: #5f9fc0; }
+
+.btn-buy:after {
+  content: "";
+  background: center no-repeat url(../img/btn-buy.png) #1e8478;
+  background-size: contain; }
+
+.btn--center {
+  margin: 0 auto; }
 
 button, input[type="submit"], .button {
   color: #fff;
@@ -354,16 +373,49 @@ button, input[type="submit"], .button {
   button:hover, input[type="submit"]:hover, .button:hover {
     background-color: #1e8478; }
 
-.button:after {
-  content: "";
-  background: center no-repeat url(../img/btn-subscribe.png) #1e8478;
-  background-size: contain;
+.btn-event a,
+a.btn-event {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1.7rem;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: normal;
+  text-decoration: none; }
+
+.btn-event--center a,
+a.btn-event--center {
+  margin-right: 45px;
+  font-size: 1rem; }
+
+.btn-register-event a,
+a.btn-register-event {
+  color: #fff;
+  background-color: #5f9fc0; }
+  .btn-register-event a:hover,
+  a.btn-register-event:hover {
+    background-color: #4a7990; }
+
+.btn-icon-event a,
+a.btn-icon-event {
+  position: relative;
+  font-weight: normal; }
+
+.btn-icon-event a:after {
   width: 55px;
   height: 100%;
   display: inline-block;
   position: absolute;
   border-radius: 2px;
   top: 0; }
+
+.btn-subscribe-event a:after {
+  content: "";
+  background: center no-repeat url(../img/btn-subscribe.png) #4a7990;
+  background-size: contain;
+  margin-left: 1.2rem; }
 
 .user-quote {
   background: url(../img/bigQuote.png) no-repeat;
@@ -1063,6 +1115,8 @@ button, input[type="submit"], .button {
       margin-top: 0; } }
   .event-sidebar p {
     font-size: 1rem; }
+  .event-sidebar .img-paypal:after {
+    margin: 0 auto; }
 
 .img--workshops {
   border-left: 8px solid #21a295;
@@ -1082,14 +1136,35 @@ button, input[type="submit"], .button {
       float: right;
       width: 17%; } }
 
+.register-content {
+  padding-top: 1rem; }
+  @media only screen and (min-width: 700px) {
+    .register-content {
+      clear: both;
+      display: inline-block;
+      margin-left: 309px; } }
+  @media only screen and (min-width: 950px) {
+    .register-content {
+      clear: both;
+      display: inline-block;
+      margin-left: 1rem; } }
+  @media only screen and (min-width: 1050px) {
+    .register-content {
+      clear: none;
+      margin: 0;
+      float: right;
+      width: 17%; } }
+
 .img-paypal:after {
   content: "";
   width: 155px;
   height: 39px;
   display: block;
   background-image: url("../img/paypal.png");
-  background-size: contain;
-  margin-top: 1rem; }
+  background-size: contain; }
+  @media only screen and (min-width: 700px) {
+    .img-paypal:after {
+      margin: 0 auto; } }
   @media only screen and (min-width: 1050px) {
     .img-paypal:after {
       display: inline-block; } }
@@ -1108,6 +1183,23 @@ button, input[type="submit"], .button {
     width: 224px;
     height: 56px;
     margin-bottom: 2.25rem; }
+
+.event-paypal--es,
+.event-paypal--en {
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  margin: 0; }
+
+.event-paypal--es {
+  background-image: url(../img/btn-comprar.png); }
+  .event-paypal--es:hover {
+    background-image: url(../img/btn-comprar--hover.png); }
+
+.event-paypal--en {
+  background-image: url(../img/btn-buy.png); }
+  .event-paypal--en:hover {
+    background-image: url(../img/btn-buy--hover.png); }
 
 .testimonials-grid__wrapper {
   display: flex;
@@ -1674,6 +1766,9 @@ input.form-radio {
 
 .spacing-btn {
   margin-top: 2.25rem; }
+
+.certification__btn--center {
+  display: inline-block; }
 
 .next-events {
   margin-bottom: 4.5rem;

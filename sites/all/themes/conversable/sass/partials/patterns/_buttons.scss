@@ -50,17 +50,15 @@
     }
 }
 
-.btn-subscribe {
+
+.btn-icon {
     position: relative;
     margin-left: -53px;
     font-size: 1rem;
     font-weight: normal
 }
 
-.btn-subscribe:after {
-    content: "";
-    background: center no-repeat url(../img/btn-subscribe.png) $turquoise-accent;
-    background-size: contain;
+.btn-icon:after {
     width: 55px;
     height: 100%;
     display: inline-block;
@@ -68,6 +66,36 @@
     border-radius: 2px;
     right: -53px;
     top: 0;
+}
+
+.btn-subscribe {
+    background-color: $blue;
+
+    &:hover {
+        background-color: $dark-blue;
+    }
+}
+
+
+.btn-subscribe:after {
+    content: "";
+    background-color: $blue;
+    background: center no-repeat url(../img/btn-subscribe.png) $dark-blue;
+    background-size: contain;
+}
+
+.btn-subscribe {
+    background-color: $blue;
+}
+
+.btn-buy:after {
+    content: "";
+    background: center no-repeat url(../img/btn-buy.png) $turquoise-accent;
+    background-size: contain;
+}
+
+.btn--center {
+    margin: 0 auto;
 }
 
 button, input[type="submit"], .button {
@@ -88,14 +116,55 @@ button, input[type="submit"], .button {
 
 }
 
-.button:after {
-    content: "";
-    background: center no-repeat url(../img/btn-subscribe.png) $turquoise-accent;
-    background-size: contain;
+.btn-event a,
+a.btn-event {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1.7rem;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.btn-event--center a,
+a.btn-event--center {
+  margin-right: 45px;
+  font-size: 1rem;
+}
+
+
+
+.btn-register-event a,
+a.btn-register-event {
+  color: #fff;
+  background-color: $blue;
+
+  &:hover {
+    background-color: $dark-blue;
+  }
+}
+
+.btn-icon-event a,
+a.btn-icon-event {
+    position: relative;
+    font-weight: normal
+}
+
+.btn-icon-event a:after  {
     width: 55px;
     height: 100%;
     display: inline-block;
     position: absolute;
     border-radius: 2px;
     top: 0;
+}
+
+.btn-subscribe-event a:after {
+    content: "";
+    background: center no-repeat url(../img/btn-subscribe.png) $dark-blue;
+    background-size: contain;
+    margin-left: 1.2rem;
 }

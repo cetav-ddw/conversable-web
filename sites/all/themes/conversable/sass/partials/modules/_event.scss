@@ -60,6 +60,11 @@
   .img-paypal:after {
     margin: 0 auto;
   }
+
+  .event-paypal--es,
+  .event-paypal--en {
+    background-position: center;
+  }
 }
 
 .img--workshops {
@@ -69,6 +74,10 @@
 
 .buy-content {
   margin-top: $space-base;
+
+  form {
+    margin-bottom: -1.2rem;
+  }
 
   @include query(700px) {
     clear: both;
@@ -115,13 +124,13 @@
   background-image: url("../img/paypal.png");
   background-size: contain;
 
-  @include query(700px) {
-    margin: 0 auto;
-  }
-
   @include query(1050px) {
     display: inline-block;
   }
+}
+
+.img-paypal--certification:after {
+  margin: 0 auto;
 }
 
 .img-paypal--width {
@@ -145,7 +154,6 @@
 
 .event-paypal--es,
 .event-paypal--en {
-  background-position: center;
   background-repeat: no-repeat;
   border: none;
   margin: 0;

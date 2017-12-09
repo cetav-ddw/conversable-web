@@ -393,7 +393,8 @@ a.btn-event--center {
 .btn-register-event a,
 a.btn-register-event {
   color: #fff;
-  background-color: #5f9fc0; }
+  background-color: #5f9fc0;
+  margin-top: 1.2rem; }
   .btn-register-event a:hover,
   a.btn-register-event:hover {
     background-color: #4a7990; }
@@ -1117,6 +1118,9 @@ a.btn-icon-event {
     font-size: 1rem; }
   .event-sidebar .img-paypal:after {
     margin: 0 auto; }
+  .event-sidebar .event-paypal--es,
+  .event-sidebar .event-paypal--en {
+    background-position: center; }
 
 .img--workshops {
   border-left: 8px solid #21a295;
@@ -1124,6 +1128,8 @@ a.btn-icon-event {
 
 .buy-content {
   margin-top: 1rem; }
+  .buy-content form {
+    margin-bottom: -1.2rem; }
   @media only screen and (min-width: 700px) {
     .buy-content {
       clear: both;
@@ -1162,12 +1168,12 @@ a.btn-icon-event {
   display: block;
   background-image: url("../img/paypal.png");
   background-size: contain; }
-  @media only screen and (min-width: 700px) {
-    .img-paypal:after {
-      margin: 0 auto; } }
   @media only screen and (min-width: 1050px) {
     .img-paypal:after {
       display: inline-block; } }
+
+.img-paypal--certification:after {
+  margin: 0 auto; }
 
 .img-paypal--width {
   width: 40%; }
@@ -1186,7 +1192,6 @@ a.btn-icon-event {
 
 .event-paypal--es,
 .event-paypal--en {
-  background-position: center;
   background-repeat: no-repeat;
   border: none;
   margin: 0; }
@@ -1714,6 +1719,9 @@ input.form-radio {
     text-align: center; }
   .certification-wrap h2 {
     margin: 0; }
+  .certification-wrap .event-paypal--es,
+  .certification-wrap .event-paypal--en {
+    background-position: center; }
 
 .certification-descrip {
   margin-top: 50px; }

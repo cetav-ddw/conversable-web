@@ -8,5 +8,5 @@ Equipo:
 * https://github.com/jmaciasr
 * https://github.com/iirenesg
 
-Direccion del proyecto: 
+Dirección del proyecto: 
 * https://github.com/jleiva
